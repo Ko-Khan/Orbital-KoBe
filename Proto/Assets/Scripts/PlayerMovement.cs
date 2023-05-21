@@ -7,28 +7,34 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D myRigidBody;
     private BoxCollider2D myBoxCollider;
-    private float jumpForce = 3.0f;
+    private float horizontal;
+    private float speed = 8f;
+    private float jumpForce = 5f;
     // Start is called before the first frame update
     
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollider = GetComponent<BoxCollider2D>();
+        
     }
 
     // Update is called once per frame
-    void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) == true) {
-            myRigidBody.velocity = Vector2.up * 8; 
+
+    void Update() {
+        horizontal = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown("space")) {
+       myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
         }
 
-        if (Input.GetKeyDown(KeyCode.A)) {
-            myRigidBody.velocity = Vector2.left * 3;
-        }
 
-        if (Input.GetKeyDown(KeyCode.D)) {
-            myRigidBody.velocity = Vector2.right * 3;
-        }
     }
+
+
+    void FixedUpdate() 
+    {
+        myRigidBody.velocity = new Vector2(horizontal, myRigidBody.velocity.y);
+        
+}
 }

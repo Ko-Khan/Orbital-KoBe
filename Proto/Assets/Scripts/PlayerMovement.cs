@@ -8,8 +8,10 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidBody;
     private BoxCollider2D myBoxCollider;
     private float horizontal;
-    private float speed = 8f;
-    private float jumpForce = 5f;
+    private float speed = 16f;
+    private float jumpForce = 8f;
+    private bool isFacingRight = true;
+    private bool jump = false;
     // Start is called before the first frame update
     
     void Start()
@@ -24,7 +26,10 @@ public class PlayerMovement : MonoBehaviour
     void Update() {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKeyDown("space")) {
+        flip();
+
+        if (Input.GetKeyDown("space") && !jump ) {
+            jump = true;
        myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
         }
 
@@ -34,7 +39,20 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
+        jump = false;
         myRigidBody.velocity = new Vector2(horizontal, myRigidBody.velocity.y);
         
 }
+
+   private void flip() {
+    if (isFacingRight && horizontal < 0 || !isFacingRight && horizontal > 0) {
+        isFacingRight = !isFacingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1f;
+        transform.localScale = localScale;
+
+    }
+   }
+
+   
 }

@@ -8,16 +8,19 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D myRigidBody;
     private BoxCollider2D myBoxCollider;
     private float horizontal;
-    private float speed = 16f;
-    private float jumpForce = 8f;
-    private bool isFacingRight = true;
-    private bool jump = false;
+    public float speed;
+    public float jumpForce;
+    public float maxDistance;
+    public bool isFacingRight = true;
+    public LayerMask layerMask;
+    
     // Start is called before the first frame update
     
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollider = GetComponent<BoxCollider2D>();
+        
         
     }
 
@@ -28,8 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
         flip();
 
-        if (Input.GetKeyDown("space") && !jump ) {
-            jump = true;
+        if (Input.GetKeyDown("space") && Physics2D.Raycast(transform.position, -transform.up, maxDistance, layerMask).collider) {
        myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
         }
 
@@ -39,8 +41,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate() 
     {
-        jump = false;
-        myRigidBody.velocity = new Vector2(horizontal, myRigidBody.velocity.y);
+       
+        myRigidBody.velocity = new Vector2(horizontal * speed, myRigidBody.velocity.y);
         
 }
 
@@ -52,6 +54,11 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = localScale;
 
     }
+   }
+
+   private void OnDrawGizmos() {
+    Gizmos.color = Color.red;
+    Gizmos.DrawRay(transform.position, - (maxDistance * transform.up));
    }
 
    

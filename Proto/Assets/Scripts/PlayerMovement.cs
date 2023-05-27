@@ -4,71 +4,76 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
+    // Deals with gravity, mass and others;
     private Rigidbody2D myRigidBody;
 
     private BoxCollider2D myBoxCollider;
     
+    // Direction the Player is going towards;
     private float horizontal;
     
-    public float speed;
+    public float walkingSpeed;
     
     public float jumpForce;
     
-    public float maxDistance;
+    public float bufferDistance;
     
     public bool isFacingRight = true;
     
-    public LayerMask layerMask;
+    public LayerMask platformMask;
     
 
     // Start is called before the first frame update
-    void Start() {
-        
+    void Start() {    
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollider = GetComponent<BoxCollider2D>();
-    
     }
 
-
-    void FixedUpdate() {
-       
-        horizontal = Input.GetAxis("Horizontal");   
-
-        myRigidBody.velocity = new Vector2(horizontal * speed, myRigidBody.velocity.y);
-
+    void Update() {
+        getMovementInputs();
         flip();
+    }
 
-        if (Input.GetKeyDown("space") && Physics2D.Raycast(transform.position, -transform.up, maxDistance, layerMask).collider) {
-            
-            myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
-        
-        }
-        
+    // Use FixedUpdate to deal with physics 
+    void FixedUpdate() {
+        myRigidBody.velocity = new Vector2(horizontal * walkingSpeed, myRigidBody.velocity.y);
+        jump();
     }
 
 
-    private void flip() {
-    
-        if (isFacingRight && horizontal < 0 || !isFacingRight && horizontal > 0) {
-        
-            isFacingRight = !isFacingRight;
-        
+    private void flip() {    
+        if (isFacingRight && horizontal < 0 || !isFacingRight && horizontal > 0) {        
+            isFacingRight = !isFacingRight;       
             Vector3 localScale = transform.localScale;
-        
-            localScale.x *= -1f;
-        
+            localScale.x *= -1f;        
             transform.localScale = localScale;
         }
-   
-   }
+    }
+
+    private bool IsGrounded() {
+        Bounds bounds = myBoxCollider.bounds;
+        RaycastHit2D touchGround = Physics2D.Raycast(new Vector2(transform.position.x, bounds.min.y), Vector2.down, bufferDistance, platformMask);
+        return touchGround;
+    }
+
+    private void jump() {
+        if (Input.GetKey("space")) { 
+            if (IsGrounded()) {
+                myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
+            }   
+        }
+    }
+
+    private void getMovementInputs() {
+        // Input.GetAxisRaw("") returns -1/0/1;
+        horizontal = Input.GetAxisRaw("Horizontal");
+    }
 
 
     private void OnDrawGizmos() {
-    
+        Bounds bounds = GetComponent<BoxCollider2D>().bounds;
         Gizmos.color = Color.red;
-    
-        Gizmos.DrawRay(transform.position, - (maxDistance * transform.up));
-   
+        Gizmos.DrawRay(new Vector2(transform.position.x, bounds.min.y), bufferDistance * -transform.up);
     }
 
 }

@@ -10,11 +10,19 @@ public class GrabAction : MonoBehaviour
 
     public float rayDistance;
 
+    private Vector2 directionalVector() {
+        if (GetComponent<PlayerMovement>().isFacingRight) {
+            return Vector2.right;
+        } else {
+            return Vector2.left;
+        }
+    }
+
 
     void Update() {
         
         // Raycast has parameters for (initial position, direction, distance)
-        RaycastHit2D grabPredicate = Physics2D.Raycast(grabbingZone.position, Vector2.right * transform.localScale, rayDistance);
+        RaycastHit2D grabPredicate = Physics2D.Raycast(grabbingZone.position, directionalVector() * transform.localScale, rayDistance);
         
         // A box is detected in the grabDetection zone 
         if (grabPredicate.collider != null && grabPredicate.collider.tag == "Box") {
@@ -27,12 +35,16 @@ public class GrabAction : MonoBehaviour
                 grabPredicate.collider.gameObject.transform.position = boxHolder.position;
 
                 grabPredicate.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+
+                GetComponent<Rigidbody2D>().isKinematic = true;
          
             } else {
 
                 grabPredicate.collider.gameObject.transform.parent = null;
 
                 grabPredicate.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+
+                GetComponent<Rigidbody2D>().isKinematic = false;
 
             }
         }

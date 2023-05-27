@@ -11,7 +11,7 @@ public class GrabAction : MonoBehaviour
     public float rayDistance;
 
     private Vector2 directionalVector() {
-        if (GetComponent<PlayerMovement>().isFacingRight) {
+        if (PlayerMovement.isFacingRight) {
             return Vector2.right;
         } else {
             return Vector2.left;
@@ -37,7 +37,10 @@ public class GrabAction : MonoBehaviour
                 grabPredicate.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 
                 GetComponent<Rigidbody2D>().isKinematic = true;
-         
+
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+
+                
             } else {
 
                 grabPredicate.collider.gameObject.transform.parent = null;
@@ -46,6 +49,7 @@ public class GrabAction : MonoBehaviour
 
                 GetComponent<Rigidbody2D>().isKinematic = false;
 
+                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             }
         }
         

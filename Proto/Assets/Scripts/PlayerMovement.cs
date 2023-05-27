@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour {
     
     public float bufferDistance;
     
-    public bool isFacingRight = true;
+    public static bool isFacingRight = true;
     
     public LayerMask platformMask;
     

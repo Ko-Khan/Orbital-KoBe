@@ -40,7 +40,7 @@ public class GrabAction : MonoBehaviour
 
                 GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
 
-                
+                PlayerMovement.notPulling = false;
             } else {
 
                 grabPredicate.collider.gameObject.transform.parent = null;
@@ -50,6 +50,8 @@ public class GrabAction : MonoBehaviour
                 GetComponent<Rigidbody2D>().isKinematic = false;
 
                 GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
+                PlayerMovement.notPulling = true;
             }
         }
         

@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour {
     public float bufferDistance;
     
     public static bool isFacingRight = true;
+
+    public static bool notPulling = false;
     
     public LayerMask platformMask;
     
@@ -42,11 +44,13 @@ public class PlayerMovement : MonoBehaviour {
 
 
     private void flip() {    
-        if (isFacingRight && horizontal < 0 || !isFacingRight && horizontal > 0) {        
+        if (notPulling) {
+            if (isFacingRight && horizontal < 0 || !isFacingRight && horizontal > 0) {        
             isFacingRight = !isFacingRight;       
             Vector3 localScale = transform.localScale;
             localScale.x *= -1f;        
             transform.localScale = localScale;
+            }
         }
     }
 

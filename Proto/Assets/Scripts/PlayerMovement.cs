@@ -17,10 +17,12 @@ public class PlayerMovement : MonoBehaviour {
     public float jumpForce;
     
     public float bufferDistance;
+
+    public float terminalVelocity = 9.81f;
     
     public static bool isFacingRight = true;
 
-    public static bool notPulling = false;
+    public static bool notPulling = true;
     
     public LayerMask platformMask;
     
@@ -40,6 +42,12 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate() {
         myRigidBody.velocity = new Vector2(horizontal * walkingSpeed, myRigidBody.velocity.y);
         jump();
+        if (!(IsGrounded()) && !notPulling) {
+        
+        myRigidBody.isKinematic = false;
+
+        }
+       
     }
 
 

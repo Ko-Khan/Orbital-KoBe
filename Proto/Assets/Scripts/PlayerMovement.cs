@@ -42,12 +42,6 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate() {
         myRigidBody.velocity = new Vector2(horizontal * walkingSpeed, myRigidBody.velocity.y);
         jump();
-        if (!(IsGrounded()) && !notPulling) {
-        
-        myRigidBody.isKinematic = false;
-
-        }
-       
     }
 
 
@@ -62,7 +56,7 @@ public class PlayerMovement : MonoBehaviour {
         }
     }
 
-    private bool IsGrounded() {
+    public bool IsGrounded() {
         Bounds bounds = myBoxCollider.bounds;
         RaycastHit2D touchGround = Physics2D.Raycast(new Vector2(transform.position.x, bounds.min.y), Vector2.down, bufferDistance, platformMask);
         return touchGround;

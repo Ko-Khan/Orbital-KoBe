@@ -1,4 +1,5 @@
-# Orbital-KoBe
+Proposal for Orbital 23
+ 
 Team Name:
 KoBe
  
@@ -37,6 +38,15 @@ In order to focus on game experience and user interactions, we would forgo compl
 
 Additional features : Bosses, additional modes, puzzles, leaderboards, timed escapes
 
+
+Features implemented by Milestone 1:
+Simple Player Movements (including left-right and jump)
+Simple scene design with the use of TileMaps and Palettes
+A box object for the Player to interact with (Push, Grab and drag the box along the platform)
+A respawn mechanism for fallen box, fallen or dead Player in the scene with the use of a death zone, respawn scripts
+A movable platform between two waypoints 
+Spikes that cause the player to respawn
+A dummy trophy to represent the endpoint (to be substituted with an ancient relic asset later on)
 Features to be completed by the mid of June:
  
 A single completed level

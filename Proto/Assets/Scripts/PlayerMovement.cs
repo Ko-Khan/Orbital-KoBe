@@ -25,17 +25,36 @@ public class PlayerMovement : MonoBehaviour {
     public static bool notPulling = true;
     
     public LayerMask platformMask;
+
+    public Animator animator;
     
 
     // Start is called before the first frame update
     void Start() {    
         myRigidBody = GetComponent<Rigidbody2D>();
         myBoxCollider = GetComponent<BoxCollider2D>();
+        animator.SetBool("IsDead", false);
+        animator.SetBool("OnGround", true);
+        animator.SetBool("IsIdle", true);
     }
 
     void Update() {
+        
         getMovementInputs();
         flip();
+        
+        if (IsGrounded()) {
+            animator.SetBool("OnGround", true);
+
+            if (horizontal != 0f) {
+                animator.SetBool("IsIdle", false);
+            } else {
+                animator.SetBool("IsIdle", true);
+            }
+        } else {
+            animator.SetBool("IsIdle", true);
+            animator.SetBool("OnGround", false);
+        }
     }
 
     // Use FixedUpdate to deal with physics 
@@ -66,7 +85,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey("space")) { 
             if (IsGrounded()) {
                 myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
-            }   
+            }
         }
     }
 

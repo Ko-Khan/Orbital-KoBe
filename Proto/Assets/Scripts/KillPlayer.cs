@@ -6,16 +6,20 @@ public class KillPlayer : MonoBehaviour {
 
     public Transform respawnPoint;
 
-    public void OnTriggerEnter2D(Collider2D other) {
+    private void OnTriggerEnter2D(Collider2D other) {
     
-        if (other.GetComponent<BoxCollider2D>().tag == "Player") {
+        if (other.CompareTag("Player")) {
                 
-        other.GetComponent<BoxCollider2D>().gameObject.GetComponent<Health>().Die();
+        other.GetComponent<Health>().Die();
 
-        other.GetComponent<BoxCollider2D>().gameObject.GetComponent<Respawn>().RespawnGameObject(respawnPoint);
+        other.GetComponent<Animator>().SetBool("IsDead", true);
+
+        other.GetComponent<PlayerMovement>().enabled = false;
+
+        //other.GetComponent<Respawn>().RespawnGameObject(respawnPoint);
 
         }        
 
-    }    
+    }
     
 }

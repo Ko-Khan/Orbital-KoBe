@@ -10,6 +10,8 @@ public class Health : MonoBehaviour {
 
     private bool immune;
 
+    public PlayerDeath PlayerDeath;
+
 
     // Start is called before the first frame update
     void Start() {
@@ -21,6 +23,7 @@ public class Health : MonoBehaviour {
 
     public void Die() {
         this.health = 0;
+        PlayerDeath.triggerDeathScreen();
     }
 
 }

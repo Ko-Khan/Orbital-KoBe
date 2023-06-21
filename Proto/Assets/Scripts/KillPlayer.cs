@@ -16,7 +16,7 @@ public class KillPlayer : MonoBehaviour {
 
         other.GetComponent<PlayerMovement>().enabled = false;
 
-        other.GetComponent<Respawn>().RespawnGameObject(respawnPoint);
+        //other.GetComponent<Respawn>().RespawnGameObject(respawnPoint);
 
         }        
 

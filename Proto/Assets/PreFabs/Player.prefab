@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6880395283781420825}
   - component: {fileID: 6880395283781420818}
   - component: {fileID: 6880395283781420819}
+  - component: {fileID: 2800034837847732107}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -171,13 +172,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8429fa81229fb494fb54f6c818297707, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  walkingSpeed: 0
   jumpForce: 12
-  maxDistance: 1.2
-  isFacingRight: 1
-  layerMask:
+  bufferDistance: 0
+  terminalVelocity: 9.81
+  platformMask:
     serializedVersion: 2
-    m_Bits: 72
+    m_Bits: 0
+  animator: {fileID: 0}
 --- !u!114 &6880395283781420819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,9 +192,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63ae4aee6939fe4cb8a1a8e9e0bf9d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grabDetection: {fileID: 6880395285766661392}
+  grabbingZone: {fileID: 0}
   boxHolder: {fileID: 6880395285429813846}
   rayDistance: 0.5
+--- !u!114 &2800034837847732107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6880395283781420824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac2f1fa019bef5247b5799c959369c0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMask:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!1 &6880395285429813841
 GameObject:
   m_ObjectHideFlags: 0

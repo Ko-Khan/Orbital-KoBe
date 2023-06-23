@@ -5,7 +5,6 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
 
-<<<<<<< Updated upstream
     public Animator animator;
 
 
@@ -27,6 +26,4 @@ public class Attack : MonoBehaviour
     }
 
 
-=======
->>>>>>> Stashed changes
 }

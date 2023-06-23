@@ -4,22 +4,13 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    // Start is called before the first frame update
+   
     public LayerMask enemyMask;
     public Transform edge;
-    
-
-    
-    
-
-    // Update is called once per frame
-
-    void Start() {
-        
-
-    }
+    public GameObject weapon;
 
 
+  
     void Update()
     {
        if (Input.GetKeyDown(KeyCode.F)) {
@@ -28,6 +19,7 @@ public class PlayerAttack : MonoBehaviour
     }
 
    void Attack() {
+    weapon.GetComponent<Animator>().SetTrigger("Attack");
     
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
 

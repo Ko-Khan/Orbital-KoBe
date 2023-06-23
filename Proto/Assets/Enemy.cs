@@ -9,43 +9,39 @@ public class Enemy : MonoBehaviour
     private int currentHealth;
     public Transform respawnPoint;
     // Start is called before the first frame update
-    void Start()
-    {
+    void Start() {
         currentHealth = health;
     }
 
-      private void OnTriggerEnter2D(Collider2D other) {
-    
-        if (other.CompareTag("Player")) {
-                
-        other.GetComponent<Health>().Die();
-
-        other.GetComponent<Animator>().SetBool("IsDead", true);
-
-        other.GetComponent<PlayerMovement>().enabled = false;
-
-        //other.GetComponent<Respawn>().RespawnGameObject(respawnPoint);
-
-        }        
-
-    }
+      
 
     // Update is called once per frame
     public void TakeDamage(int damage) {
         currentHealth -= damage;
 
+        GetComponent<Animator>().SetTrigger("TakeDamage");
+
         if (currentHealth <= 0) {
-            Die();
+            StartCoroutine(Die());
         }
 
     }
 
 
 
-    void Die() {
-    Debug.Log("Noooo!!!");
+    private IEnumerator Die() {
+
     GetComponent<Collider2D>().enabled = false;
-    this.enabled = false;
+
+    GetComponent<WayPointFollower>().enabled = false;
+
+    GetComponent<Animator>().SetBool("IsDead", true);
+
+    yield return new WaitForSeconds(1f);
+
+    GetComponent<SpriteRenderer>().enabled = false;
+
+    Destroy(gameObject);
     
     }
 }

@@ -7,6 +7,7 @@ TagManager:
   - Box
   - Platform
   - PowerUp
+  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - BackGround2
   - PowerUp
   - Enemies
-  - 
+  - Weapon
   - 
   - 
   - 

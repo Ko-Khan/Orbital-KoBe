@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class KillPlayer : MonoBehaviour {
 
-    public Transform respawnPoint;
-
     private void OnTriggerEnter2D(Collider2D other) {
     
         if (other.CompareTag("Player")) {
@@ -15,8 +13,6 @@ public class KillPlayer : MonoBehaviour {
         other.GetComponent<Animator>().SetBool("IsDead", true);
 
         other.GetComponent<PlayerMovement>().enabled = false;
-
-        //other.GetComponent<Respawn>().RespawnGameObject(respawnPoint);
 
         }        
 

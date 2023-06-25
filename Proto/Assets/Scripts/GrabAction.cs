@@ -28,7 +28,7 @@ public class GrabAction : MonoBehaviour
         if (grabPredicate.collider != null && grabPredicate.collider.tag == "Box") {
             
             // the "g" key is pressed to grab a Box
-            if (Input.GetKey(KeyCode.G) && GetComponent<PlayerMovement>().IsGrounded()) {
+            if (Input.GetKey(KeyCode.G)) {
 
                 grabPredicate.collider.gameObject.transform.parent = boxHolder;
 
@@ -36,9 +36,9 @@ public class GrabAction : MonoBehaviour
 
                 grabPredicate.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 
-                GetComponent<Rigidbody2D>().isKinematic = true;
+                //GetComponent<Rigidbody2D>().isKinematic = true;
 
-                GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
+                //GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
 
                 PlayerMovement.notPulling = false;
             } else {
@@ -47,7 +47,7 @@ public class GrabAction : MonoBehaviour
 
                 grabPredicate.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
 
-                GetComponent<Rigidbody2D>().isKinematic = false;
+                //GetComponent<Rigidbody2D>().isKinematic = false;
 
                 GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 

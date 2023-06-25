@@ -7,7 +7,7 @@ public class LevelClear : MonoBehaviour {
     
     public void OnTriggerEnter2D(Collider2D other) {
         if (other.GetComponent<BoxCollider2D>().tag == "Player") {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("EndScreen");
         }
     }
 }

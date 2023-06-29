@@ -37,6 +37,10 @@ public class Enemy : MonoBehaviour
 
     GetComponent<Animator>().SetBool("IsDead", true);
 
+    GetComponent<SpriteRenderer>().enabled = false;
+
+    Destroy(gameObject);
+
     yield return new WaitForSeconds(1f);
 
     GetComponent<SpriteRenderer>().enabled = false;

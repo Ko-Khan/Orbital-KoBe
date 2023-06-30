@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float terminalVelocity = 9.81f;
     
-    public static bool isFacingRight = true;
+    public bool isFacingRight = true;
 
     public static bool notPulling = true;
     

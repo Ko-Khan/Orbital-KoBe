@@ -24,7 +24,7 @@ public class PlayerAttack : MonoBehaviour
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
 
     foreach(Collider2D enemy in hitenemies) {
-        enemy.GetComponent<Enemy>().TakeDamage(5);
+        enemy.GetComponent<Enemy>().TakeDamage(1);
     }
 
    }

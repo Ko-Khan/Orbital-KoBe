@@ -8,9 +8,14 @@ public class Enemy : MonoBehaviour
     public int health;
     private int currentHealth;
     public Transform respawnPoint;
+
+
     // Start is called before the first frame update
     void Start() {
         currentHealth = health;
+        GetComponent<Animator>().SetBool("IsDead", false);
+        GetComponent<Animator>().ResetTrigger("TakeDamage");
+        StartCoroutine(WakeUp());
     }
 
       
@@ -18,6 +23,7 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     public void TakeDamage(int damage) {
         currentHealth -= damage;
+        Debug.Log("Current Health" + currentHealth);
 
         GetComponent<Animator>().SetTrigger("TakeDamage");
 
@@ -28,24 +34,26 @@ public class Enemy : MonoBehaviour
     }
 
 
+    private IEnumerator WakeUp() {
+        yield return new WaitForSeconds(5f);
+        GetComponent<Pathfinding.AIPath>().enabled = true;
+    }
+
+
 
     private IEnumerator Die() {
 
     GetComponent<Collider2D>().enabled = false;
 
-    GetComponent<WayPointFollower>().enabled = false;
-
     GetComponent<Animator>().SetBool("IsDead", true);
 
-    GetComponent<SpriteRenderer>().enabled = false;
+    GetComponent<Pathfinding.AIPath>().enabled = false;
 
-    Destroy(gameObject);
-
-    yield return new WaitForSeconds(1f);
+    yield return new WaitForSeconds(1.5f);
 
     GetComponent<SpriteRenderer>().enabled = false;
 
     Destroy(gameObject);
-    
+
     }
 }

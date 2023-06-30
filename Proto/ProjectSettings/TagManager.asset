@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - PowerUp
   - Weapon
+  - FollowingEnemy
   layers:
   - Default
   - TransparentFX
@@ -56,6 +57,9 @@ TagManager:
     locked: 0
   - name: PowerUp
     uniqueID: 3651287097
+    locked: 0
+  - name: NPCs
+    uniqueID: 4278489273
     locked: 0
   - name: Player
     uniqueID: 3865386003

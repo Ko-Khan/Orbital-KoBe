@@ -6,13 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+
+    public GameObject player;
+
     public void triggerDeathScreen() {
         gameObject.SetActive(true);
     }
 
     public void restartButton() {
-        SceneManager.LoadScene("Tutorial");
+        gameObject.SetActive(false);
+        player.GetComponent<Health>().Revive();
     }
+        
 
     public void quitButton() {
         Application.Quit();

@@ -7,7 +7,6 @@ public class Enemy : MonoBehaviour
 
     public int health;
     private int currentHealth;
-    public Transform respawnPoint;
 
 
     // Start is called before the first frame update
@@ -15,7 +14,10 @@ public class Enemy : MonoBehaviour
         currentHealth = health;
         GetComponent<Animator>().SetBool("IsDead", false);
         GetComponent<Animator>().ResetTrigger("TakeDamage");
-        StartCoroutine(WakeUp());
+        
+        if (gameObject.CompareTag("FollowingEnemy")) {
+            StartCoroutine(WakeUp());
+        }
     }
 
       
@@ -47,7 +49,11 @@ public class Enemy : MonoBehaviour
 
     GetComponent<Animator>().SetBool("IsDead", true);
 
-    GetComponent<Pathfinding.AIPath>().enabled = false;
+    GetComponent<WayPointFollower>().enabled = false; 
+    
+    if (gameObject.CompareTag("FollowingEnemy")) {
+        GetComponent<Pathfinding.AIPath>().enabled = false;
+    }
 
     yield return new WaitForSeconds(1.5f);
 

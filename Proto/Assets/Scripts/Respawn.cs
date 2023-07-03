@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour {
 
-    public void RespawnGameObject(Transform respawnPoint) {
+    public Vector3 spawnPoint;
+    public Vector3 respawnPoint;
 
-        this.GetComponent<Animator>().SetBool("IsDead", false);
+    private void Awake() {
+        spawnPoint = this.transform.position;
+    }
 
-        this.transform.position = respawnPoint.position;
+    private void Start() {
+        if (respawnPoint == Vector3.zero) {
+            respawnPoint = spawnPoint;
+        } 
+    }
 
-        this.transform.rotation = respawnPoint.rotation;
-        
+    public void updateRespawnPoint(Vector3 checkpoint) {
+        respawnPoint = checkpoint;
     }
 }

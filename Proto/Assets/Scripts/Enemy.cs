@@ -45,6 +45,8 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator Die() {
 
+    Destroy(GetComponent<Rigidbody>());
+
     GetComponent<Collider2D>().enabled = false;
 
     GetComponent<Animator>().SetBool("IsDead", true);

@@ -8,13 +8,11 @@ public class KillPlayer : MonoBehaviour {
     
         if (other.CompareTag("Player")) {
                 
-        other.GetComponent<Health>().Die();
+        Health playerHealth = other.GetComponent<Health>();
 
-        other.GetComponent<Animator>().SetBool("IsDead", true);
+        playerHealth.TakeDamage(playerHealth.maxHealth);
 
-        other.GetComponent<PlayerMovement>().enabled = false;
-
-        }        
+       }        
 
     }
     

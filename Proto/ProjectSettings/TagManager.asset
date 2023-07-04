@@ -9,6 +9,7 @@ TagManager:
   - PowerUp
   - Weapon
   - FollowingEnemy
+  - Enemy
   layers:
   - Default
   - TransparentFX

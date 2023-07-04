@@ -41,8 +41,7 @@ public class FollowingEnemy : MonoBehaviour
 
     private IEnumerator Die() {
         GetComponent<Collider2D>().enabled = false;
-        GetComponent<Animator>().SetBool("IsDead", true);
-        GetComponent<WayPointFollower>().enabled = false;    
+        GetComponent<Animator>().SetBool("IsDead", true);    
         GetComponent<Pathfinding.AIPath>().enabled = false;
         yield return new WaitForSeconds(1.5f);
         GetComponent<SpriteRenderer>().enabled = false;

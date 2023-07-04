@@ -25,7 +25,11 @@ public class PlayerAttack : MonoBehaviour
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
 
     foreach(Collider2D enemy in hitenemies) {
-      enemy.GetComponent<Enemy>().TakeDamage(attackingPower);
+      if (enemy.CompareTag("Enemy")) {
+        enemy.GetComponent<Enemy>().TakeDamage(attackingPower);
+      } else if (enemy.CompareTag("FollowingEnemy")) {
+        enemy.GetComponent<FollowingEnemy>().TakeDamage(attackingPower);
+      }
     }
   }
 

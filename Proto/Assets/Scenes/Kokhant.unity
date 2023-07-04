@@ -65874,8 +65874,13 @@ GameObject:
   - component: {fileID: 1530114621}
   - component: {fileID: 1530114620}
   - component: {fileID: 1530114622}
+  - component: {fileID: 1530114623}
+  - component: {fileID: 1530114624}
+  - component: {fileID: 1530114625}
+  - component: {fileID: 1530114626}
+  - component: {fileID: 1530114627}
   m_Layer: 10
-  m_Name: Triangle
+  m_Name: Mr_Skelebones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65889,7 +65894,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1530114616}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.86, y: 6.86, z: 0}
+  m_LocalPosition: {x: 32.51, y: -0.99, z: 0}
   m_LocalScale: {x: 5.383152, y: 5.383152, z: 5.383152}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65979,7 +65984,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -65993,7 +65998,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.37, y: 0.32}
+  m_Size: {x: 0.2, y: 0.32}
   m_EdgeRadius: 0
 --- !u!114 &1530114621
 MonoBehaviour:
@@ -66020,7 +66025,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -66029,6 +66034,72 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &1530114623
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530114616}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.00000023841858}
+  serializedVersion: 2
+  m_Radius: 0.18
+--- !u!114 &1530114624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530114616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c883286daba55014ea27b3b7c1cda173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1530114625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530114616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471bc796a449acf43972dc31c8b8f3a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1530114626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530114616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 764834790baf68b44be86d1d8c8ea3eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFacingRight: 1
+  Player: {fileID: 701112903}
+--- !u!114 &1530114627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530114616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b3d2762709e764896c4600f2769a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1590547128
 GameObject:
   m_ObjectHideFlags: 0
@@ -75059,11 +75130,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4968291553775585051, guid: 9a3f638036f46b54b9dc34e874668ed1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 54.68
+      value: 72.49
       objectReference: {fileID: 0}
     - target: {fileID: 4968291553775585051, guid: 9a3f638036f46b54b9dc34e874668ed1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.14
+      value: 0.94
       objectReference: {fileID: 0}
     - target: {fileID: 4968291553775585051, guid: 9a3f638036f46b54b9dc34e874668ed1, type: 3}
       propertyPath: m_LocalPosition.z

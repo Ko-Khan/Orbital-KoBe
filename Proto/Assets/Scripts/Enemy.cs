@@ -17,11 +17,8 @@ public class Enemy : MonoBehaviour
     }
 
       
-
-    // Update is called once per frame
     public void TakeDamage(int damage) {
         currentHealth -= damage;
-        Debug.Log("Current Health" + currentHealth);
 
         GetComponent<Animator>().SetTrigger("TakeDamage");
 

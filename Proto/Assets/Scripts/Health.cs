@@ -23,9 +23,25 @@ public class Health : MonoBehaviour {
     }
 
 
-    public void Die() {
+    public void TakeDamage(int damage) {
+        currentHealth -= damage;
+        healthbar.setHealth(currentHealth);
+
+        GetComponent<Animator>().SetTrigger("TakeDamage");
+
+        if (currentHealth <= 0) {
+            StartCoroutine(Die());
+        }
+
+    }
+
+
+    public IEnumerator Die() {
         currentHealth = 0;
         healthbar.setHealth(currentHealth);
+        GetComponent<Animator>().SetBool("IsDead", true);
+        GetComponent<PlayerMovement>().enabled = false;
+        yield return new WaitForSeconds(1.5f);
         PlayerDeath.triggerDeathScreen();
     }
 

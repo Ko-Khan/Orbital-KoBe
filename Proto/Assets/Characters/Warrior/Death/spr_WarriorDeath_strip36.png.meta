@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 2
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,7 +115,889 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 30
+        width: 40
+        height: 36
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dcc44d35318f44a86524da04f95aeb
+      internalID: 231811354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_1
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 30
+        width: 41
+        height: 36
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5354a514c7d26f74d873791485cb348a
+      internalID: -1523646516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_2
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 30
+        width: 41
+        height: 36
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab5bc428238e5a4d804850030c1d418
+      internalID: 1428582769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_3
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 30
+        width: 42
+        height: 36
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afa53dca75a56b4ba62eb500c813350
+      internalID: 1987299747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_4
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 30
+        width: 44
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd2023821657ee41adcbea65a8150ed
+      internalID: -2034410288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_5
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 30
+        width: 39
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06ed96da3019a74482b8d30151c84a8
+      internalID: -2031980365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_6
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 30
+        width: 41
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494298355411d1c43a650953cdc4f07d
+      internalID: 873127626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_7
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 30
+        width: 39
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdf1d6614d66cc449ccb4397cc46b52
+      internalID: 819306329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_8
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 30
+        width: 40
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2807313e1004b44a45648c4a190f91
+      internalID: 1738009458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_9
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 30
+        width: 40
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9deb2b3ab339c2147b5d911d03d21a41
+      internalID: 2088642925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_10
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 30
+        width: 43
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5970d4d6cb4781a439b81544dc4cad0f
+      internalID: -85959713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_11
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 30
+        width: 46
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08028a95dc061994abd37cf39a9baae2
+      internalID: -237082978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_12
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 30
+        width: 40
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd82a324efb83249b4eb1a0ca7776a0
+      internalID: -1047298200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_13
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 30
+        width: 46
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b47f083e9e4464eb77b0642e1a9790
+      internalID: 1864415115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_14
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 30
+        width: 39
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a556092299c29334087b2c73cadf0b1d
+      internalID: -1025460625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_15
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 30
+        width: 39
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5010dad3ef1704c4da0e42fb7e66ce96
+      internalID: 1409896033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_16
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 30
+        width: 39
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ee684dcb453f84f8de1a2ac20bc7e1
+      internalID: -240550668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_17
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 30
+        width: 42
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be917b8df67e1f24a9d6ed334d5851b9
+      internalID: 369098758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_18
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 30
+        width: 44
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed66a5ddd6d5024597a2ac3cbd163fd
+      internalID: 427918984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_19
+      rect:
+        serializedVersion: 2
+        x: 1851
+        y: 30
+        width: 54
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a5f3498a49fb048af579985c950ebc
+      internalID: -843890919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_20
+      rect:
+        serializedVersion: 2
+        x: 1947
+        y: 30
+        width: 56
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4470651fcb940e4f808faca4234dacb
+      internalID: 1197230268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_21
+      rect:
+        serializedVersion: 2
+        x: 2044
+        y: 30
+        width: 50
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc33bea5182691745912bc51e9e06092
+      internalID: -859852249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_22
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 30
+        width: 57
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd3636ebfb9a0348892081441bb4ebe
+      internalID: 76936794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_23
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 30
+        width: 51
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac07c968ea1d12a4d9208f66306af7ad
+      internalID: -1280436370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_24
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 30
+        width: 51
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6a4d452b56b12498f19c331a9afcf1
+      internalID: -1142068816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_25
+      rect:
+        serializedVersion: 2
+        x: 2428
+        y: 30
+        width: 51
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b820890f9435cd43afc6c0003f7fd76
+      internalID: -22033606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_26
+      rect:
+        serializedVersion: 2
+        x: 2523
+        y: 30
+        width: 52
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e38d3f109281e47a707645e659e97b
+      internalID: 1229071276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_27
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 30
+        width: 51
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f0d1a9ac4d6222478dd5a7389a9d0fb
+      internalID: -1620150185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_28
+      rect:
+        serializedVersion: 2
+        x: 2715
+        y: 30
+        width: 51
+        height: 34
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce750eb4c6d0bac4ea9c80b73a879c1c
+      internalID: 1653429829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_29
+      rect:
+        serializedVersion: 2
+        x: 2823
+        y: 39
+        width: 19
+        height: 23
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27a3e73e5e44014db1b8a696a9a58d7
+      internalID: 1308862141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_30
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 30
+        width: 50
+        height: 29
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15a6d8934e54464f9e55a26e0056c97
+      internalID: 1511059801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_31
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 40
+        width: 7
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54af55d7d803f34dacd6145906274f7
+      internalID: 911449036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_32
+      rect:
+        serializedVersion: 2
+        x: 3196
+        y: 30
+        width: 51
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143635fde5eaa7845b7d3b600bbccd02
+      internalID: -1347832086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_33
+      rect:
+        serializedVersion: 2
+        x: 3292
+        y: 30
+        width: 51
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5c02996a1702f4ebacf6d4bf45ae15
+      internalID: -799290381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_34
+      rect:
+        serializedVersion: 2
+        x: 3387
+        y: 30
+        width: 52
+        height: 12
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d41f3b53d829f43a0cd4c5de33c66a
+      internalID: -1848123861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_35
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 32
+        width: 5
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d2309268974b24db2661cb7b40683b
+      internalID: -2000722772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_36
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 35
+        width: 4
+        height: 4
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a883c0f78503674087e050a6602acc5
+      internalID: -480984009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_37
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 32
+        width: 5
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5999b8c1394d5143859cfc9f83006bc
+      internalID: -1582079266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_38
+      rect:
+        serializedVersion: 2
+        x: 2096
+        y: 32
+        width: 5
+        height: 5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5028c89c91f5cd9469854ebc583f5947
+      internalID: -1506159341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_39
+      rect:
+        serializedVersion: 2
+        x: 2811
+        y: 30
+        width: 51
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a7a688bcd78644ca8a6d28f0e6ae82
+      internalID: 2118836575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_40
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 30
+        width: 50
+        height: 7
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0128451c3ab7ce44e8772677dea5eaee
+      internalID: -1852081560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spr_WarriorDeath_strip36_41
+      rect:
+        serializedVersion: 2
+        x: 3100
+        y: 30
+        width: 51
+        height: 10
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee686cc9b91d2940be0256dbb32b416
+      internalID: -701475958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +1008,49 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_WarriorDeath_strip36_0: 231811354
+      spr_WarriorDeath_strip36_1: -1523646516
+      spr_WarriorDeath_strip36_10: -85959713
+      spr_WarriorDeath_strip36_11: -237082978
+      spr_WarriorDeath_strip36_12: -1047298200
+      spr_WarriorDeath_strip36_13: 1864415115
+      spr_WarriorDeath_strip36_14: -1025460625
+      spr_WarriorDeath_strip36_15: 1409896033
+      spr_WarriorDeath_strip36_16: -240550668
+      spr_WarriorDeath_strip36_17: 369098758
+      spr_WarriorDeath_strip36_18: 427918984
+      spr_WarriorDeath_strip36_19: -843890919
+      spr_WarriorDeath_strip36_2: 1428582769
+      spr_WarriorDeath_strip36_20: 1197230268
+      spr_WarriorDeath_strip36_21: -859852249
+      spr_WarriorDeath_strip36_22: 76936794
+      spr_WarriorDeath_strip36_23: -1280436370
+      spr_WarriorDeath_strip36_24: -1142068816
+      spr_WarriorDeath_strip36_25: -22033606
+      spr_WarriorDeath_strip36_26: 1229071276
+      spr_WarriorDeath_strip36_27: -1620150185
+      spr_WarriorDeath_strip36_28: 1653429829
+      spr_WarriorDeath_strip36_29: 1308862141
+      spr_WarriorDeath_strip36_3: 1987299747
+      spr_WarriorDeath_strip36_30: 1511059801
+      spr_WarriorDeath_strip36_31: 911449036
+      spr_WarriorDeath_strip36_32: -1347832086
+      spr_WarriorDeath_strip36_33: -799290381
+      spr_WarriorDeath_strip36_34: -1848123861
+      spr_WarriorDeath_strip36_35: -2000722772
+      spr_WarriorDeath_strip36_36: -480984009
+      spr_WarriorDeath_strip36_37: -1582079266
+      spr_WarriorDeath_strip36_38: -1506159341
+      spr_WarriorDeath_strip36_39: 2118836575
+      spr_WarriorDeath_strip36_4: -2034410288
+      spr_WarriorDeath_strip36_40: -1852081560
+      spr_WarriorDeath_strip36_41: -701475958
+      spr_WarriorDeath_strip36_5: -2031980365
+      spr_WarriorDeath_strip36_6: 873127626
+      spr_WarriorDeath_strip36_7: 819306329
+      spr_WarriorDeath_strip36_8: 1738009458
+      spr_WarriorDeath_strip36_9: 2088642925
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

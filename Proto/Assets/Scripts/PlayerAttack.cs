@@ -5,29 +5,29 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
    
-    public LayerMask enemyMask;
-    public Transform edge;
-    public GameObject weapon;
+  public LayerMask enemyMask;
+  public Transform edge;
+  public int attackingPower;
+  public GameObject weapon;
 
 
   
-    void Update()
-    {
-       if (Input.GetKeyDown(KeyCode.F)) {
-        Attack();
-       }
+  void Update()
+  {
+    if (Input.GetKeyDown(KeyCode.F)) {
+      Attack();
     }
+  }
 
-   void Attack() {
+  void Attack() {
     weapon.GetComponent<Animator>().SetTrigger("Attack");
     
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
 
     foreach(Collider2D enemy in hitenemies) {
-        enemy.GetComponent<Enemy>().TakeDamage(1);
+      enemy.GetComponent<Enemy>().TakeDamage(attackingPower);
     }
-
-   }
+  }
 
   void OnDrawGizmosSelected() {
     Gizmos.DrawLine(transform.position, edge.position);

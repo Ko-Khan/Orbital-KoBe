@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class Health : MonoBehaviour {
 
-    public int health;
+    public int maxHealth;
+
+    private int currentHealth;
+
+    public Healthbar healthbar;
 
     private bool immune;
 
@@ -13,13 +17,15 @@ public class Health : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        health = 100;
+        currentHealth = maxHealth;
+        healthbar.setMaxHealth(maxHealth);
         immune = false;
     }
 
 
     public void Die() {
-        this.health = 0;
+        currentHealth = 0;
+        healthbar.setHealth(currentHealth);
         PlayerDeath.triggerDeathScreen();
     }
 
@@ -30,7 +36,8 @@ public class Health : MonoBehaviour {
         animator.SetBool("IsIdle", true);
         animator.SetBool("OnGround", true);
         animator.Play("Cowboy_Idle", -1, 0);
-        health = 100;
+        currentHealth = 100;
+        healthbar.setHealth(currentHealth);
         GetComponent<PlayerMovement>().enabled = true;
     }
 

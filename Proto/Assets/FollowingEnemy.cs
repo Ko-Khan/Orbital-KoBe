@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class FollowingEnemy : MonoBehaviour
 {
-
+    
     public int health;
     private int currentHealth;
 
@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
         currentHealth = health;
         GetComponent<Animator>().SetBool("IsDead", false);
         GetComponent<Animator>().ResetTrigger("TakeDamage");
+        StartCoroutine(WakeUp());
     }
 
       
@@ -32,10 +33,17 @@ public class Enemy : MonoBehaviour
     }
 
 
+    private IEnumerator WakeUp() {
+        yield return new WaitForSeconds(5f);
+        GetComponent<Pathfinding.AIPath>().enabled = true;
+    }
+
+
     private IEnumerator Die() {
         GetComponent<Collider2D>().enabled = false;
         GetComponent<Animator>().SetBool("IsDead", true);
-        GetComponent<WayPointFollower>().enabled = false; 
+        GetComponent<WayPointFollower>().enabled = false;    
+        GetComponent<Pathfinding.AIPath>().enabled = false;
         yield return new WaitForSeconds(1.5f);
         GetComponent<SpriteRenderer>().enabled = false;
         Destroy(gameObject);

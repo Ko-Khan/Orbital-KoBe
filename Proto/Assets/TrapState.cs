@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TrapState : MonoBehaviour
 {
+    public float initialDelay;
     public float activeDuration;
     public bool trapActive;
     public int trapDamage;
@@ -24,6 +25,7 @@ public class TrapState : MonoBehaviour
     }
 
     private IEnumerator trapPattern(float activeDuration) {
+        yield return new WaitForSeconds(initialDelay);
         animator.SetBool("TrapActive", true);
         trapActive = true;
         yield return new WaitForSeconds(activeDuration);
@@ -35,10 +37,18 @@ public class TrapState : MonoBehaviour
 
     
     private void OnTriggerEnter2D(Collider2D other) {
-        if (trapActive) {
-            if (other.CompareTag("Player")) {
-            other.gameObject.GetComponent<Health>().TakeDamage(trapDamage);        
+        if (other.CompareTag("Player")) {
+            if (trapActive) {
+                StartCoroutine(damagePlayer(other.gameObject));        
             }
+        }
+    }
+
+    private IEnumerator damagePlayer(GameObject player) {
+        player.GetComponent<Health>().TakeDamage(trapDamage);
+        yield return new WaitForSeconds(0.5f);
+        if (trapActive) {
+            StartCoroutine(damagePlayer(player));
         }
     }
 }

@@ -23,13 +23,15 @@ public class PlayerAttack : MonoBehaviour
     weapon.GetComponent<Animator>().SetTrigger("Attack");
     
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
-
+     if (hitenemies != null) {
+      Debug.Log("Ow");
+     }
     foreach(Collider2D enemy in hitenemies) {
       if (enemy.CompareTag("Enemy")) {
         enemy.GetComponent<Enemy>().TakeDamage(attackingPower);
       } else if (enemy.CompareTag("FollowingEnemy")) {
         enemy.GetComponent<FollowingEnemy>().TakeDamage(attackingPower);
-      }
+      } 
     }
   }
 

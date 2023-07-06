@@ -29,7 +29,7 @@ public class MeleeEnemy : MonoBehaviour
             {
                cooldownTimer = 0;
                anim.SetTrigger("Attack");
-               DamagePlayer();
+               Invoke("DamagePlayer", 2);
             }
         }
     }

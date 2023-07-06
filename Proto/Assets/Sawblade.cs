@@ -16,6 +16,14 @@ public class Sawblade : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.collider.CompareTag("Player")) {
+            if (trapActive) {
+                StartCoroutine(damagePlayer(other.gameObject));        
+            }
+        }
+    }
+
     private IEnumerator damagePlayer(GameObject player) {
         player.GetComponent<Health>().TakeDamage(trapDamage);
         yield return new WaitForSeconds(0.5f);

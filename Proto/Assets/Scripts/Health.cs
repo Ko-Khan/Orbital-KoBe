@@ -63,12 +63,17 @@ public class Health : MonoBehaviour {
         GetComponent<PlayerMovement>().enabled = true;
     }
 
-    public void Knockback(float strength, Transform enemyLocation) 
+    public void Knockback(float height, float distance, Transform enemyLocation) 
     {
-       Vector2 direction = (transform.position - enemyLocation.position).normalized;
+       
        GetComponent<PlayerMovement>().enabled = false;
-       playerBody.AddForce(direction * strength, ForceMode2D.Impulse);
-       Invoke("onPlayer", 2);
+       if (enemyLocation.position.x > transform.position.x) 
+       {
+         playerBody.velocity = new Vector2(-1 * distance, height);
+       } else {
+        playerBody.velocity = new Vector2(distance, height);
+       }
+       Invoke("onPlayer", 1);
 
 
 

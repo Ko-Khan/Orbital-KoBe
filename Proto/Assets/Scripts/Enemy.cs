@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
 
 
     private IEnumerator Die() {
-        GetComponent<Collider2D>().enabled = false;
+       // GetComponent<Collider2D>().enabled = false;
         GetComponent<Animator>().SetBool("IsDead", true);
         GetComponent<WayPointFollower>().enabled = false; 
         yield return new WaitForSeconds(1.5f);

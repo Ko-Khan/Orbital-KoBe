@@ -60,6 +60,7 @@ public class MeleeEnemy : MonoBehaviour
         if (PlayerInSIght())
         {
             playerHealth.TakeDamage(damage);
+            playerHealth.Knockback(10, GetComponent<Transform>());
 
         }
     }

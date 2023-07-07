@@ -12,6 +12,10 @@ public class Health : MonoBehaviour {
 
     private bool immune;
 
+    private Rigidbody2D playerBody;
+
+    private Transform playerLocation;
+
     public PlayerDeath PlayerDeath;
 
 
@@ -20,6 +24,8 @@ public class Health : MonoBehaviour {
         currentHealth = maxHealth;
         healthbar.setMaxHealth(maxHealth);
         immune = false;
+        playerBody = GetComponent<Rigidbody2D>();
+        playerLocation = GetComponent<Transform>();
     }
 
 
@@ -54,6 +60,22 @@ public class Health : MonoBehaviour {
         animator.Play("Cowboy_Idle", -1, 0);
         currentHealth = 100;
         healthbar.setHealth(currentHealth);
+        GetComponent<PlayerMovement>().enabled = true;
+    }
+
+    public void Knockback(float strength, Transform enemyLocation) 
+    {
+       Vector2 direction = (transform.position - enemyLocation.position).normalized;
+       GetComponent<PlayerMovement>().enabled = false;
+       playerBody.AddForce(direction * strength, ForceMode2D.Impulse);
+       Invoke("onPlayer", 2);
+
+
+
+    }
+
+    void onPlayer()
+    {
         GetComponent<PlayerMovement>().enabled = true;
     }
 

@@ -18,6 +18,12 @@ public class PlayerMovement : MonoBehaviour {
     
     public float bufferDistance;
 
+    private int jumpNo;
+
+   [SerializeField] private float inputDelay;
+
+    private float t;
+
     public float terminalVelocity = 9.81f;
     
     public bool isFacingRight = true;
@@ -36,6 +42,8 @@ public class PlayerMovement : MonoBehaviour {
         animator.SetBool("IsDead", false);
         animator.SetBool("OnGround", true);
         animator.SetBool("IsIdle", true);
+        jumpNo = 1;
+        t = 0;
     }
 
     void Update() {
@@ -43,8 +51,11 @@ public class PlayerMovement : MonoBehaviour {
         getMovementInputs();
         flip();
         
+        
         if (IsGrounded()) {
             animator.SetBool("OnGround", true);
+            jumpNo = 1 ;
+            
 
             if (horizontal != 0f) {
                 animator.SetBool("IsIdle", false);
@@ -60,6 +71,12 @@ public class PlayerMovement : MonoBehaviour {
     // Use FixedUpdate to deal with physics 
     void FixedUpdate() {
         myRigidBody.velocity = new Vector2(horizontal * walkingSpeed, myRigidBody.velocity.y);
+        if (IsGrounded() )
+        {
+            jumpNo = 1;
+            t = 0;
+            
+        }
         jump();
     }
 
@@ -82,11 +99,18 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     private void jump() {
-        if (Input.GetKey("space")) { 
-            if (IsGrounded()) {
+        if (Input.GetKey(KeyCode.Space)) { 
+            if (jumpNo > 0 && t <= 0) {
+                jumpNo -= 1;
+                Debug.Log("Jumped");
                 myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, jumpForce);
+                t = inputDelay;
             }
+
+            t -= Time.deltaTime;
         }
+
+        
     }
 
     private void getMovementInputs() {
@@ -99,6 +123,10 @@ public class PlayerMovement : MonoBehaviour {
         Bounds bounds = GetComponent<BoxCollider2D>().bounds;
         Gizmos.color = Color.red;
         Gizmos.DrawRay(new Vector2(transform.position.x, bounds.min.y), bufferDistance * -transform.up);
+    }
+
+    public void DoubleJump() {
+        jumpNo = 2;
     }
 
 }

@@ -23,18 +23,22 @@ public class Enemy : MonoBehaviour
         GetComponent<Animator>().SetTrigger("TakeDamage");
 
         if (currentHealth <= 0) {
-            StartCoroutine(Die());
+            Die();
         }
 
     }
 
 
-    private IEnumerator Die() {
+    private void Die() {
        // GetComponent<Collider2D>().enabled = false;
         GetComponent<Animator>().SetBool("IsDead", true);
-        GetComponent<WayPointFollower>().enabled = false; 
-        yield return new WaitForSeconds(1.5f);
-        GetComponent<SpriteRenderer>().enabled = false;
+        Invoke("destroyObject", 2);
+    }
+
+    private void destroyObject() {
+         GetComponent<SpriteRenderer>().enabled = false;
         Destroy(gameObject);
+
+
     }
 }

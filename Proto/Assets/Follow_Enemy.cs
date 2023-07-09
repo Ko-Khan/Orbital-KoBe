@@ -33,7 +33,6 @@ public class Follow_Enemy : MonoBehaviour
             animator.SetBool("IsIdle", false);
             Follow();
         } else if (home.position.x != transform.position.x) {
-            Debug.Log("???");
             transform.position = Vector2.MoveTowards(transform.position, home.position, speed * Time.deltaTime);
         } else {
         animator.SetBool("IsIdle", true);

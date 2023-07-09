@@ -6,28 +6,13 @@ public class Double_Jump : MonoBehaviour
 {
 
      private Animator animator;
-     private float animTime = 1f;
-     private bool eaten;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        eaten = false;
+        
     }
 
-    // Update is called once per frame
-
-    void Update()
-    {
-        if (animTime <= 0)
-        {
-            Destroy(gameObject);
-        }
-         if (eaten) 
-         {
-        animTime -= Time.deltaTime;
-         }
-    }
     void OnTriggerEnter2D(Collider2D player) 
     {
         
@@ -37,6 +22,11 @@ public class Double_Jump : MonoBehaviour
             player.GetComponent<PlayerMovement>().DoubleJump();
         }
 
-        eaten = true;
+        animator.SetTrigger("Eat");
+    }
+
+    void selfDestruct() 
+    {
+        Destroy(gameObject);
     }
 }

@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void DoubleJump() {
-        jumpNo = 2;
+        jumpNo = 1;
     }
 
 }

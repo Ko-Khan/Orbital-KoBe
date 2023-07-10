@@ -74763,6 +74763,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chomper
       objectReference: {fileID: 0}
+    - target: {fileID: 1766371060448664018, guid: d575102b4e42bd24082aa7cada08a193, type: 3}
+      propertyPath: range
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766371060448664018, guid: d575102b4e42bd24082aa7cada08a193, type: 3}
+      propertyPath: playerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d575102b4e42bd24082aa7cada08a193, type: 3}
 --- !u!1001 &1910981077683589420
@@ -75144,11 +75152,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4926222975390987706, guid: 5a74c2ed545479c4f9251bb39469a439, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 74.54
+      value: 74.71
       objectReference: {fileID: 0}
     - target: {fileID: 4926222975390987706, guid: 5a74c2ed545479c4f9251bb39469a439, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.12
+      value: 3.55
       objectReference: {fileID: 0}
     - target: {fileID: 4926222975390987706, guid: 5a74c2ed545479c4f9251bb39469a439, type: 3}
       propertyPath: m_LocalPosition.z

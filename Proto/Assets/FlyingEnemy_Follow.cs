@@ -21,7 +21,7 @@ public class FlyingEnemy_Follow : MonoBehaviour
      {
         if (PlayerInSight())
         {
-            Debug.Log("Hey!");
+          
             Follow();
         }
 

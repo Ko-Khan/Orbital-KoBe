@@ -15,7 +15,7 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] private float speed;
 
-    [SerializeField] private int direction;
+    [SerializeField] private float direction;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,7 @@ public class Projectile : MonoBehaviour
         Move(direction);
     }
 
-    void Move(int direction) 
+    void Move(float direction) 
     {
 
        rb.velocity =  Vector2.right * (direction) * speed;
@@ -43,15 +43,23 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
         DamagePlayer();
         Destroy(gameObject);
+        }
     }
 
     void DamagePlayer()
     {
         Player.GetComponent<Health>().TakeDamage(damage);
         
+
+    }
+
+    public void setDirection(float direction) 
+    {
+        this.direction = direction;
 
     }
 }

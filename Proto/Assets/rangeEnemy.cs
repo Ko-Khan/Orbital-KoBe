@@ -33,6 +33,7 @@ public class rangeEnemy : MonoBehaviour
 
         if (Time.time > shootTime)
         {
+            projectile.GetComponent<Projectile>().setDirection(transform.localScale.x * -1f);
             animator.SetTrigger("Shoot");
             shootTime = Time.time + reloadTime;
         }

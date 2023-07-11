@@ -10,15 +10,12 @@ public class Checkpoint : MonoBehaviour
     public Animator animator;
 
     // Start is called before the first frame update
-    private void Start()
-    {
-        if (!reached) {
-            animator.SetBool("CheckpointReached", false);
-        }
+    private void Start() {
+        animator.SetBool("CheckpointReached", false);
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player")) {
+        if (other.CompareTag("Player") && !reached) {
             reached = true;
             animator.SetBool("CheckpointReached", true);
             other.gameObject.GetComponent<Respawn>().updateRespawnPoint(this.transform.position);

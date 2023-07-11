@@ -33,6 +33,7 @@ public class PlayerMovement : MonoBehaviour {
     public LayerMask platformMask;
 
     public Animator animator;
+
     
 
     // Start is called before the first frame update
@@ -71,13 +72,16 @@ public class PlayerMovement : MonoBehaviour {
     // Use FixedUpdate to deal with physics 
     void FixedUpdate() {
         myRigidBody.velocity = new Vector2(horizontal * walkingSpeed, myRigidBody.velocity.y);
+        
         if (IsGrounded() )
         {
             jumpNo = 1;
             t = 0;
+            myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, 0);
             
         }
         jump();
+        
     }
 
 

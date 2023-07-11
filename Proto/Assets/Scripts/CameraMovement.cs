@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
     
     private Vector3 pos;
 
     // Start is called before the first frame update
     void Start() {
+        GameObject Player = GameObject.FindWithTag("Player");
+        target = Player.transform;
         pos = transform.position;
     }
 

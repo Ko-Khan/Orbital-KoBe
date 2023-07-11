@@ -5,11 +5,12 @@ using UnityEngine;
 public class EnemyFlip : MonoBehaviour
 {
     public bool isFacingRight;
-    public Transform Player;
+    private Transform Player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject playerObject = GameObject.FindWithTag("Player");
+        Player = playerObject.transform;
     }
 
     // Update is called once per frame

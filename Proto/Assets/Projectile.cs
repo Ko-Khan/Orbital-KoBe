@@ -25,13 +25,17 @@ public class Projectile : MonoBehaviour
 
         Vector3 localScale = transform.localScale;
         localScale *= -1f * direction;
+        lifeSpan = Time.time + lifeSpan;
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Time.time > lifeSpan) 
+        {
+            Destroy(gameObject);
+        }
         Move(direction);
     }
 
@@ -48,6 +52,8 @@ public class Projectile : MonoBehaviour
         DamagePlayer();
         Destroy(gameObject);
         }
+
+
     }
 
     void DamagePlayer()

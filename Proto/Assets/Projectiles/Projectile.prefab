@@ -121,10 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4828ab73e73a1e44d8b90c04a1ca2d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lifeSpan: 0
+  lifeSpan: 3
   damage: 5
   speed: 2
-  direction: -1
+  direction: -3.1832
 --- !u!50 &7581957203788594731
 Rigidbody2D:
   serializedVersion: 4

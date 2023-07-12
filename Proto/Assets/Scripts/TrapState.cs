@@ -15,7 +15,7 @@ public class TrapState : MonoBehaviour
     {
         trapActive = false;
         animator.SetBool("TrapActive", false);
-        StartCoroutine(trapPattern(activeDuration));
+        StartCoroutine(delay());
     }
 
     // Update is called once per frame
@@ -24,8 +24,12 @@ public class TrapState : MonoBehaviour
         
     }
 
-    private IEnumerator trapPattern(float activeDuration) {
+    private IEnumerator delay() {
         yield return new WaitForSeconds(initialDelay);
+        StartCoroutine(trapPattern(activeDuration));
+    }
+
+    private IEnumerator trapPattern(float activeDuration) {  
         animator.SetBool("TrapActive", true);
         trapActive = true;
         yield return new WaitForSeconds(activeDuration);

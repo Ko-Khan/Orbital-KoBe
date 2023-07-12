@@ -47,13 +47,14 @@ public class Projectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") || other.CompareTag("Platform"))
-        {
-        DamagePlayer();
-        Destroy(gameObject);
+        if (other.CompareTag("Player")) {
+            DamagePlayer();
+            Destroy(gameObject);
         }
         
-
+        if (other.CompareTag("Platform")) {
+            Destroy(gameObject);
+        }
     }
 
     void DamagePlayer()

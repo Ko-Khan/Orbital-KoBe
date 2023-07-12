@@ -123,7 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFacingRight: 0
-  Player: {fileID: 0}
 --- !u!114 &1766371060448664021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,4 +175,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectile: {fileID: 7581957203788594729, guid: 084b46f5bbab74b419b25fba84963641, type: 3}
-  reloadTime: 5
+  range: 30
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 8
+  reloadTime: 2

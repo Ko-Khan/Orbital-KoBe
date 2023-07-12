@@ -18,9 +18,11 @@ public class CollapsingBlock : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D collision) 
     {
-        GameObject player = collision.collider.gameObject;
-        if (player.GetComponent<PlayerMovement>().IsGrounded()) {
-            Invoke("collapse", 0.1f);
+        if (collision.collider.CompareTag("Player")) {
+            GameObject player = collision.collider.gameObject;
+            if (player.GetComponent<PlayerMovement>().IsGrounded()) {
+                Invoke("collapse", 0.1f);
+            }
         }
     }
 

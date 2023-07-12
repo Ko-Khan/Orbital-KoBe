@@ -1,0 +1,839 @@
+fileFormatVersion: 2
+guid: 4eb4e922d2bf1e14dbce0c2a41732729
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flatten Background_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 202.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d1faceac5a27b48a5e417a28c04329
+      internalID: 437314636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 202.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c6b6537dc48ca4f9e5b5bb5cb08038
+      internalID: -1358358902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 202.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01739e11a1d2b8543bb71294842f42f1
+      internalID: 1484082165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 202.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a05f546e1e1a0b428a8e5bba199fa30
+      internalID: -1324871050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 202.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a01a95b0a0c3b44281fcca1d323a3ba
+      internalID: -1456897133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_5
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 202.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13dfc17ce8920e428024386e3a71157
+      internalID: 977846659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_6
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 202.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c817c27ade7bf2345ad2e5649160208b
+      internalID: 1310813729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_7
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 202.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6269a40093496e74eaf7be8e97869590
+      internalID: 1854400504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 135.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b7f45aea7880249905a6342248a49f
+      internalID: 97216099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 135.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e84e80b55f75af4a89b663638bae3b6
+      internalID: 700539220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_10
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 135.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce15da49bba23c742801b027a8f35927
+      internalID: 1516522703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 135.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82026bcc9a2a8b8498f1bd84e8ce7f86
+      internalID: -480172710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 135.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f72a629676e7dad44bc7be0a4d9d1f57
+      internalID: -1673079132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_13
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 135.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aae6c87d5e5cfd43a87852dde9a13a6
+      internalID: -670866224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 135.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4792b0587fb014d428317b53d6dd7458
+      internalID: -142738532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_15
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 135.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5425e2c107edabd49b5c7933745bcde3
+      internalID: -1820262669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 68.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3b870493863f24f8a8b30e0dd45e57
+      internalID: -1170602681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_17
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 68.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55fcae87729cf642ba24c904a1e8177
+      internalID: 597298128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_18
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 68.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc6ebf7c26fb8144afc7f1826ddf03c
+      internalID: 418634109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 68.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ba5036a3e952046b9a12b3201fed31
+      internalID: -1422992768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_20
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 68.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82fc0910ba333494e8ce6fc73e713ef6
+      internalID: 1432978646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 68.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7255a1e0f98c514ab41e532b0df7e5a
+      internalID: -698809163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_22
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 68.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ad1d302fc96fd469ec7c0ec0a3d345
+      internalID: 299139099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_23
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 68.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fb8d138df176e47a775ef4ae3e09d7
+      internalID: 1516627768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e174000a65a27748b50ee9578d2559b
+      internalID: -1531677312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_25
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c2c85dd1a89e944b3f0771efd98089
+      internalID: 851633860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_26
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391d2a23c0db15c4498de8b9bfea6832
+      internalID: -147768876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_27
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14240bbb3cedfc44db7ba38a190c5e05
+      internalID: -175592546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_28
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf175c696173d542b1de86a4ca54507
+      internalID: -1349660179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_29
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 1.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedf1affda8bc7f4f9ed71cd79ecf254
+      internalID: -1548450046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_30
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 1.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a4994b3c8c1d44993ca05b1b69a8c5
+      internalID: 1400441686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flatten Background_31
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 1.5
+        width: 60
+        height: 67.5
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99e90d6ab5c19c4baa934e14a3cdf41
+      internalID: -2099267418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Flatten Background_0: 437314636
+      Flatten Background_1: -1358358902
+      Flatten Background_10: 1516522703
+      Flatten Background_11: -480172710
+      Flatten Background_12: -1673079132
+      Flatten Background_13: -670866224
+      Flatten Background_14: -142738532
+      Flatten Background_15: -1820262669
+      Flatten Background_16: -1170602681
+      Flatten Background_17: 597298128
+      Flatten Background_18: 418634109
+      Flatten Background_19: -1422992768
+      Flatten Background_2: 1484082165
+      Flatten Background_20: 1432978646
+      Flatten Background_21: -698809163
+      Flatten Background_22: 299139099
+      Flatten Background_23: 1516627768
+      Flatten Background_24: -1531677312
+      Flatten Background_25: 851633860
+      Flatten Background_26: -147768876
+      Flatten Background_27: -175592546
+      Flatten Background_28: -1349660179
+      Flatten Background_29: -1548450046
+      Flatten Background_3: -1324871050
+      Flatten Background_30: 1400441686
+      Flatten Background_31: -2099267418
+      Flatten Background_4: -1456897133
+      Flatten Background_5: 977846659
+      Flatten Background_6: 1310813729
+      Flatten Background_7: 1854400504
+      Flatten Background_8: 97216099
+      Flatten Background_9: 700539220
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

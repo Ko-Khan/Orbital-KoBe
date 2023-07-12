@@ -19,11 +19,23 @@ public class rangeEnemy : MonoBehaviour
 
     private Animator animator;
 
+    public bool isFacingRight;
+
+    private float change;
+
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindWithTag("Player");
         animator = GetComponent<Animator>();
+
+        if (isFacingRight)
+        {
+            change = -1f;
+        } else {
+            change = 1f;
+        }
+       
         
     }
 
@@ -39,7 +51,7 @@ public class rangeEnemy : MonoBehaviour
         {
         if (Time.time > shootTime)
         {
-            projectile.GetComponent<Projectile>().setDirection(transform.localScale.x * -1f);
+            projectile.GetComponent<Projectile>().setDirection(transform.localScale.x * -1f * change);
             animator.SetTrigger("Shoot");
             shootTime = Time.time + reloadTime;
         }
@@ -48,7 +60,7 @@ public class rangeEnemy : MonoBehaviour
 
     bool PlayerInSight()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left * transform.localScale.x, 
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left * transform.localScale.x * change, 
         range, playerMask);
 
         return hit.collider != null;
@@ -63,6 +75,6 @@ public class rangeEnemy : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(transform.position, transform.position + Vector3.left * transform.localScale.x * range);
+        Gizmos.DrawLine(transform.position, transform.position + Vector3.left * transform.localScale.x * range * change);
     }
 }

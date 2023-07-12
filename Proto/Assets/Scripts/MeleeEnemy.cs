@@ -29,7 +29,6 @@ public class MeleeEnemy : MonoBehaviour
             {
                cooldownTimer = 0;
                anim.SetTrigger("Attack");
-               Invoke("DamagePlayer", 2);
             }
         }
     }
@@ -55,7 +54,7 @@ public class MeleeEnemy : MonoBehaviour
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x, boxCollider.bounds.size);
     }
 
-    private void DamagePlayer() 
+    private void damagePlayer() 
     {
         if (PlayerInSIght())
         {

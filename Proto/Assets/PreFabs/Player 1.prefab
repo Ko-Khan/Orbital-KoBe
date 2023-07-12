@@ -283,7 +283,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 832174753660117776}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 53ddf74a8c3909240845891455e11331, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -336,6 +336,7 @@ MonoBehaviour:
   walkingSpeed: 7
   jumpForce: 17
   bufferDistance: 0.2
+  inputDelay: 0
   terminalVelocity: 9.81
   isFacingRight: 1
   platformMask:
@@ -373,7 +374,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1024
   edge: {fileID: 832174753931447877}
-  attackingPower: 0
+  attackingPower: 25
   weapon: {fileID: 832174753612213584}
 --- !u!95 &832174753660117789
 Animator:

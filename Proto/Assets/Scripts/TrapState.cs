@@ -6,6 +6,7 @@ public class TrapState : MonoBehaviour
 {
     public float initialDelay;
     public float activeDuration;
+    public float inactiveDuration;
     public bool trapActive;
     public int trapDamage;
     public Animator animator;
@@ -35,7 +36,7 @@ public class TrapState : MonoBehaviour
         yield return new WaitForSeconds(activeDuration);
         trapActive = false;
         animator.SetBool("TrapActive", false);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(inactiveDuration);
         StartCoroutine(trapPattern(activeDuration));
     }
 

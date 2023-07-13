@@ -29,9 +29,7 @@ public class PlayerAttack : MonoBehaviour
     foreach(Collider2D enemy in hitenemies) {
       if (enemy.CompareTag("Enemy")) {
         enemy.GetComponent<Enemy>().TakeDamage(attackingPower);
-      } else if (enemy.CompareTag("FollowingEnemy")) {
-        enemy.GetComponent<FollowingEnemy>().TakeDamage(attackingPower);
-      } 
+      }  
     }
   }
 

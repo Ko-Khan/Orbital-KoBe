@@ -73,7 +73,7 @@ public class Health : MonoBehaviour {
        } else {
         playerBody.velocity = new Vector2(distance, height);
        }
-       Invoke("onPlayer", 1);
+       
 
 
 

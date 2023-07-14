@@ -122,9 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeSpan: 3
-  damage: 1
+  damage: 8
   speed: 2
-  direction: 9.305939
+  direction: 3.1832
 --- !u!50 &7581957203788594731
 Rigidbody2D:
   serializedVersion: 4

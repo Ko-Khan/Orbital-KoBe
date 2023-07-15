@@ -33,6 +33,7 @@ public class Portal : MonoBehaviour
             {
               player.GetComponent<Transform>().position = portal.GetComponent<Transform>().position;
             }
+            
         }
 
     }

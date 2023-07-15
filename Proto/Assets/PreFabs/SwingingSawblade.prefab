@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7611244368219958906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 388.8223, y: 137.20291, z: 1.175819}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -40,6 +40,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5527301834838522229}
     m_Modifications:
+    - target: {fileID: 7437263101550247616, guid: 2f672fc311b1c684793452249c07521f, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: -291.8223
+      objectReference: {fileID: 0}
+    - target: {fileID: 7437263101550247616, guid: 2f672fc311b1c684793452249c07521f, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -133.00291
+      objectReference: {fileID: 0}
     - target: {fileID: 7437263101550247617, guid: 2f672fc311b1c684793452249c07521f, type: 3}
       propertyPath: m_Name
       value: SawbladeHolder

@@ -11,6 +11,7 @@ TagManager:
   - FollowingEnemy
   - Enemy
   - UI
+  - Boss
   layers:
   - Default
   - TransparentFX

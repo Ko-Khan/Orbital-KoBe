@@ -8,10 +8,12 @@ public class PlayerAttack : MonoBehaviour
   public LayerMask enemyMask;
   public Transform edge;
   public int attackingPower;
-  public GameObject weapon;
 
 
-  
+  void Start() {
+    GetComponent<Animator>().ResetTrigger("Attack");
+  }
+
   void Update()
   {
     if (Input.GetKeyDown(KeyCode.F)) {
@@ -19,8 +21,8 @@ public class PlayerAttack : MonoBehaviour
     }
   }
 
-  void Attack() {
-    weapon.GetComponent<Animator>().SetTrigger("Attack");
+  private void Attack() {
+    GetComponent<Animator>().SetTrigger("Attack");
     
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
      if (hitenemies != null) {

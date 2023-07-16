@@ -14,12 +14,12 @@ public class PlayerDeath : MonoBehaviour
     }
 
     public void restartButton() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void continueButton() {
         gameObject.SetActive(false);
         player.GetComponent<Health>().Revive();
     }
         
-
-    public void quitButton() {
-        Application.Quit();
-    }
 }

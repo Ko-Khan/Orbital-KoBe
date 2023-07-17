@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
     }
 
     private void destroyObject() {
-         GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
         Destroy(gameObject);
 
 

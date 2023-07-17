@@ -6,8 +6,9 @@ public class ContactEnemy : MonoBehaviour
 {
     // Start is called before the first frame update
     private GameObject Player;
-    [SerializeField] private int Damage;
-    [SerializeField] private float Force;
+    [SerializeField] public int Damage;
+    [SerializeField] public float Force;
+    [SerializeField] public float knockedBackDistance;
     
 
     void Start()
@@ -26,7 +27,7 @@ public class ContactEnemy : MonoBehaviour
         if(other == Player.GetComponent<Collider2D>())
         {
         Player.GetComponent<Health>().TakeDamage(Damage);
-        Player.GetComponent<Health>().Knockback(Force, 2, transform);
+        Player.GetComponent<Health>().Knockback(Force, knockedBackDistance, transform);
         }
 
     }

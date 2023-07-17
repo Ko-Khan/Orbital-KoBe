@@ -6,32 +6,35 @@ public class Hammer : MonoBehaviour
 {
     // Start is called before the first frame update
     public float speed;
+    public LayerMask terrain;
+    private Collider2D collider;
     private GameObject Player;
     private GameObject Target;
     private Animator animator;
+    private Vector3 direction;
     void Start()
     {
         Target = new GameObject();
         Player = GameObject.FindWithTag("Player");
         Target.transform.position = Player.GetComponent<Transform>().position;
         animator = GetComponent<Animator>();
+        collider = GetComponent<Collider2D>();
+
+        direction =  (Player.transform.position - transform.position);
         
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (transform.position != Target.transform.position)
+      /*  if (collider.IsTouchingLayers(terrain)) 
         {
-            float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, Target.transform.position, step);
-        }
+            Debug.Log("Bam");
+            Destroy(gameObject);
+        } */
+        transform.Translate(direction * Time.deltaTime * speed);
 
-        if (transform.position.y <= -4.4)
-        {
-            Destroy(GetComponent<Rigidbody2D>());
-            animator.SetTrigger("Boom");
-        }
+       
 
         
     }
@@ -42,6 +45,14 @@ public class Hammer : MonoBehaviour
        {
         Player.GetComponent<Health>().TakeDamage(8);
 
-       } 
+       }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+        {
+        Destroy(gameObject);
+    }
     }
 }

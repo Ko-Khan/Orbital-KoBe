@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource sfx;
     [Header("-------AudioClips-----------")]
     [SerializeField] private AudioClip background;
+    [SerializeField] private AudioClip attack;
+    [SerializeField] private AudioClip walk;
     
 
 
@@ -17,6 +19,26 @@ public class AudioManager : MonoBehaviour
     {
         bgm.clip = background;
         bgm.Play();
+    }
+
+   public void PlaySFX(string track)
+    {
+        switch(track)
+        {
+            case "Attack":
+            sfx.clip = attack;
+            sfx.Play();
+            break;
+
+            case "Walk":
+            sfx.clip = walk;
+            sfx.Play();
+            break;
+
+            default:
+            break;
+        }
+
     }
 
     // Update is called once per frame

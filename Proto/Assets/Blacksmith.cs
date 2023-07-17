@@ -5,47 +5,87 @@ using UnityEngine;
 public class Blacksmith : MonoBehaviour
 {
     public GameObject hammer;
+
     public float speed;
+
+    public Transform jump;
+
+    public Transform spinPoint1;
+
+    public Transform spinPoint2l;
+
     private Animator animator;
-    private Rigidbody2D rb;
-    private GameObject Target;
+
+    private Vector3 landingDirection;
+
+    private bool landing = false;
+
+    private GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        rb = GetComponent<Rigidbody2D>();
-        Target = new GameObject();
-        leap();
+        Player = GameObject.FindWithTag("Player");
+        
+        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
+        if (landing) 
+        {
+              transform.Translate(landingDirection * Time.deltaTime * speed);
+
+        }
+
+        
         
     }
 
     void leap()
     {
 
-        rb.velocity = new Vector2(rb.velocity.x, 20);
-        animator.SetTrigger("Leap");
+        transform.position = jump.position;
+        animator.SetTrigger("Launch");
 
 
     }
 
-    void leapThrow()
+    void Throw()
     {
 
 
         Instantiate(hammer, transform.position, Quaternion.identity);
+        landingDirection = Player.transform.position - transform.position;
+        Invoke("land", 1.0f);
+        
         
     }
 
-    public void land(Vector2 target)
+    public void land()
     {
+        landing = true;
         animator.SetTrigger("Land");
-        float step = speed * Time.deltaTime;
-        transform.position =  Vector2.MoveTowards(transform.position, target, step);
+        
 
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (landing)
+        {
+            landing = false;
+            animator.SetTrigger("Touchdown");
+        }
+
+        landing = false;
+
+
+    }
+
+    void SpinDash()
+    {
+        animator.SetBool("Spin", true);
     }
 }

@@ -59,6 +59,7 @@ public class PlayerMovement : MonoBehaviour {
             
 
             if (horizontal != 0f) {
+                GameObject.FindWithTag("Audio").GetComponent<AudioManager>().PlaySFX("Walk");
                 animator.SetBool("IsIdle", false);
             } else {
                 animator.SetBool("IsIdle", true);

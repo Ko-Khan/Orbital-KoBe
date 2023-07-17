@@ -23,6 +23,7 @@ public class PlayerAttack : MonoBehaviour
 
   private void Attack() {
     GetComponent<Animator>().SetTrigger("Attack");
+    GameObject.FindWithTag("Audio").GetComponent<AudioManager>().PlaySFX("Attack");
     
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
      if (hitenemies != null) {

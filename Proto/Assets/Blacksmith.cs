@@ -12,7 +12,7 @@ public class Blacksmith : MonoBehaviour
 
     public Transform spinPoint1;
 
-    public Transform spinPoint2l;
+    public Transform spinPoint2;
 
     private Animator animator;
 
@@ -21,11 +21,24 @@ public class Blacksmith : MonoBehaviour
     private bool landing = false;
 
     private GameObject Player;
+
+    public float special1Cooldown;
+
+    public float special2Cooldown;
+    
+    private float timeSinceLastSpinTrigger = 0.0f;
+
+    private float timeSinceLastLeapTrigger = 0.0f; 
+
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
+
         Player = GameObject.FindWithTag("Player");
+
+        
+
         
         
     }
@@ -37,6 +50,27 @@ public class Blacksmith : MonoBehaviour
         {
               transform.Translate(landingDirection * Time.deltaTime * speed);
 
+            
+
+        }
+
+        timeSinceLastSpinTrigger += Time.deltaTime;
+
+        // if (timeSinceLastSpinTrigger  >= special1Cooldown)
+        // {
+        //     animator.SetBool("Spin", true);
+
+        //     timeSinceLastSpinTrigger = 0.0f;
+
+        // }
+
+        timeSinceLastLeapTrigger += Time.deltaTime;
+
+        if (timeSinceLastLeapTrigger >= special2Cooldown)
+        {
+            leap();
+            
+            timeSinceLastLeapTrigger = 0.0f;
         }
 
         
@@ -79,7 +113,7 @@ public class Blacksmith : MonoBehaviour
             animator.SetTrigger("Touchdown");
         }
 
-        landing = false;
+        
 
 
     }

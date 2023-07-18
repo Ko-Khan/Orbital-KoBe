@@ -12,6 +12,9 @@ TagManager:
   - Enemy
   - UI
   - Boss
+  - Audio
+  - Spin1
+  - Spin2
   layers:
   - Default
   - TransparentFX

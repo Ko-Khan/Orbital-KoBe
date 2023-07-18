@@ -56,19 +56,19 @@ public class Blacksmith : MonoBehaviour
 
         timeSinceLastSpinTrigger += Time.deltaTime;
 
-        // if (timeSinceLastSpinTrigger  >= special1Cooldown)
-        // {
-        //     animator.SetBool("Spin", true);
+        if (timeSinceLastSpinTrigger  >= special1Cooldown)
+        {
+            animator.SetBool("Spin", true);
 
-        //     timeSinceLastSpinTrigger = 0.0f;
+            timeSinceLastSpinTrigger = 0.0f;
 
-        // }
+        }
 
         timeSinceLastLeapTrigger += Time.deltaTime;
 
         if (timeSinceLastLeapTrigger >= special2Cooldown)
         {
-            leap();
+            animator.SetTrigger("Launch");
             
             timeSinceLastLeapTrigger = 0.0f;
         }

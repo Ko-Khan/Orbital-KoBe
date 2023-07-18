@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16a3719a6f30f914a9bc8dc477628b4f
+guid: 1f2b86b8db784bc419d607d3c4b8a4a7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -117,169 +117,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle2_0
+      name: BluePortal_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 117
-        width: 45
-        height: 62
+        x: 399
+        y: 8
+        width: 156
+        height: 298
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c79e7cea2476ae544abc00631695c8b8
-      internalID: 224020107
+      spriteID: 357e1a0ea7323c641999ea65c9bb75f0
+      internalID: -1492808316
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_1
+      name: BluePortal_1
       rect:
         serializedVersion: 2
-        x: 134
-        y: 117
-        width: 45
-        height: 62
+        x: 724
+        y: 4
+        width: 158
+        height: 308
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5bfc2ef0756192449173532353bce12
-      internalID: -1878310658
+      spriteID: 5bdcedf1e73d6384ca7117fdecdd58f3
+      internalID: 46532269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_2
+      name: BluePortal_2
       rect:
         serializedVersion: 2
-        x: 234
-        y: 119
-        width: 45
-        height: 61
+        x: 1039
+        y: 4
+        width: 162
+        height: 312
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7183270c0c27eff47ad5bbc39ce52110
-      internalID: -560147359
+      spriteID: cf2a77fc987f59b4e957d1bbf7a9a271
+      internalID: 918800364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_3
+      name: BluePortal_5
       rect:
         serializedVersion: 2
-        x: 334
-        y: 119
-        width: 45
-        height: 61
+        x: 84
+        y: 20
+        width: 147
+        height: 282
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8684cf8652342d940854c805859bd85e
-      internalID: -826223827
+      spriteID: 69c3b009ff952cb42ab77ed4d4b48c7b
+      internalID: 1443421774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_4
+      name: BluePortal_6
       rect:
         serializedVersion: 2
-        x: 34
-        y: 19
-        width: 45
-        height: 60
+        x: 1358
+        y: 8
+        width: 158
+        height: 294
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85f9d86c1f88d3b40b1976318a85e0c0
-      internalID: -9397463
+      spriteID: 96ad72b53221dfb4cb75aeb104964fea
+      internalID: -618081894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_5
+      name: BluePortal_7
       rect:
         serializedVersion: 2
-        x: 134
-        y: 19
-        width: 45
-        height: 60
+        x: 1683
+        y: 8
+        width: 154
+        height: 288
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3fe35bbbaf8c4743aa0b8fb850b1fd7
-      internalID: 697614390
+      spriteID: e080ea80742a50a43b9dd2e36bd2a9a7
+      internalID: -1941577984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_6
+      name: BluePortal_8
       rect:
         serializedVersion: 2
-        x: 234
-        y: 17
-        width: 45
-        height: 63
+        x: 2010
+        y: 18
+        width: 142
+        height: 273
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d5d92a3f85a9e64db01373f8d50c4b6
-      internalID: -1469945267
+      spriteID: 81eebd4b270f5634392b401c27f6ae3a
+      internalID: 2028682223
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_7
+      name: BluePortal_10
       rect:
         serializedVersion: 2
-        x: 334
-        y: 17
-        width: 45
-        height: 63
+        x: 2329
+        y: 24
+        width: 142
+        height: 272
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a387a77dbd30e5d40a8bdfee477a41de
-      internalID: 1639213125
+      spriteID: 9f67b9556ced7024a98ac6eea3d84ce1
+      internalID: -1109089213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BluePortal_11
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 18
+        width: 147
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce31925c7b094a4985a2f3dae9e343f
+      internalID: -1220426105
       vertices: []
       indices: 
       edges: []
@@ -295,14 +316,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle2_0: 224020107
-      idle2_1: -1878310658
-      idle2_2: -560147359
-      idle2_3: -826223827
-      idle2_4: -9397463
-      idle2_5: 697614390
-      idle2_6: -1469945267
-      idle2_7: 1639213125
+      BluePortal_0: -1492808316
+      BluePortal_1: 46532269
+      BluePortal_10: -1109089213
+      BluePortal_11: -1220426105
+      BluePortal_12: 1915403257
+      BluePortal_13: -1246206520
+      BluePortal_14: -169337426
+      BluePortal_15: 599827772
+      BluePortal_2: 918800364
+      BluePortal_3: 649360192
+      BluePortal_4: 1543874716
+      BluePortal_5: 1443421774
+      BluePortal_6: -618081894
+      BluePortal_7: -1941577984
+      BluePortal_8: 2028682223
+      BluePortal_9: 1645176319
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -6,35 +6,32 @@ public class Portal : MonoBehaviour
 {
     // Start is called before the first frame update
 
+    
+
     private GameObject player;
-    [SerializeField] private GameObject portal;
-    private float waitingTime;
-    private float downTime;
+    
+    private Transform destination;
+    
+    [SerializeField] private float distance;
+
+    [SerializeField] private GameObject Destination;
+    
     void Start()
     {
         player = GameObject.FindWithTag("Player");
-        waitingTime = 1f;
+        
+        destination = Destination.transform;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other = player.GetComponent<Collider2D>())
+        if (Vector2.Distance(other.transform.position, transform.position) > distance)
         {
-            downTime = Time.time + waitingTime;
+            GameObject.FindWithTag("Audio").GetComponent<AudioManager>().PlaySFX("Portal");
+            player.transform.position = new Vector2(destination.position.x, destination.position.y);
         }
     }
 
 
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other == player.GetComponent<Collider2D>())
-        {
-            if (Time.time > downTime)
-            {
-              player.GetComponent<Transform>().position = portal.GetComponent<Transform>().position;
-            }
-            
-        }
-
-    }
+  
 }

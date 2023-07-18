@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 16a3719a6f30f914a9bc8dc477628b4f
+guid: c29db6f4306d89843a9ebd6c41dfe29c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle2_0
+      name: OrangePortal_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 117
-        width: 45
-        height: 62
+        x: 399
+        y: 8
+        width: 156
+        height: 298
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c79e7cea2476ae544abc00631695c8b8
-      internalID: 224020107
+      spriteID: 23726e75d60be4d4eaa29f1753a15688
+      internalID: 1315189028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_1
+      name: OrangePortal_1
       rect:
         serializedVersion: 2
-        x: 134
-        y: 117
-        width: 45
-        height: 62
+        x: 724
+        y: 4
+        width: 158
+        height: 308
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5bfc2ef0756192449173532353bce12
-      internalID: -1878310658
+      spriteID: 691c8559a754f58489c9f9958e9f6c03
+      internalID: -1630453132
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_2
+      name: OrangePortal_2
       rect:
         serializedVersion: 2
-        x: 234
-        y: 119
-        width: 45
-        height: 61
+        x: 1039
+        y: 4
+        width: 162
+        height: 312
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7183270c0c27eff47ad5bbc39ce52110
-      internalID: -560147359
+      spriteID: dbf99b6a0421a9e4cbb88344566c4ef3
+      internalID: 1631510400
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_3
+      name: OrangePortal_5
       rect:
         serializedVersion: 2
-        x: 334
-        y: 119
-        width: 45
-        height: 61
+        x: 84
+        y: 20
+        width: 147
+        height: 282
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8684cf8652342d940854c805859bd85e
-      internalID: -826223827
+      spriteID: add02dd9e46fbab4ba64e8857b790fa2
+      internalID: 213700716
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_4
+      name: OrangePortal_6
       rect:
         serializedVersion: 2
-        x: 34
-        y: 19
-        width: 45
-        height: 60
+        x: 1358
+        y: 8
+        width: 158
+        height: 294
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85f9d86c1f88d3b40b1976318a85e0c0
-      internalID: -9397463
+      spriteID: 7d7720992db5b4d4fa9781b44d99e773
+      internalID: -1757944042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_5
+      name: OrangePortal_7
       rect:
         serializedVersion: 2
-        x: 134
-        y: 19
-        width: 45
-        height: 60
+        x: 1683
+        y: 8
+        width: 154
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3fe35bbbaf8c4743aa0b8fb850b1fd7
-      internalID: 697614390
+      spriteID: 302081f8aa9e9184b8b957d39f5d5179
+      internalID: -222528829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_6
+      name: OrangePortal_8
       rect:
         serializedVersion: 2
-        x: 234
-        y: 17
-        width: 45
-        height: 63
+        x: 2010
+        y: 18
+        width: 142
+        height: 273
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,20 +257,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d5d92a3f85a9e64db01373f8d50c4b6
-      internalID: -1469945267
+      spriteID: 1d01300bb7cf47248b7fcf653b66b71c
+      internalID: -612785363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle2_7
+      name: OrangePortal_10
       rect:
         serializedVersion: 2
-        x: 334
-        y: 17
-        width: 45
-        height: 63
+        x: 2329
+        y: 24
+        width: 142
+        height: 272
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +278,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a387a77dbd30e5d40a8bdfee477a41de
-      internalID: 1639213125
+      spriteID: ec4e712f5fee86642a765a5064163afc
+      internalID: -2059070457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangePortal_11
+      rect:
+        serializedVersion: 2
+        x: 2644
+        y: 18
+        width: 147
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e20fdf254e5c4478300f9c22a74c1f
+      internalID: -241103296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OrangePortal_13
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 199
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0680e07e8c791034fa6ef98d4b8fab84
+      internalID: 18819407
       vertices: []
       indices: 
       edges: []
@@ -295,14 +337,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      idle2_0: 224020107
-      idle2_1: -1878310658
-      idle2_2: -560147359
-      idle2_3: -826223827
-      idle2_4: -9397463
-      idle2_5: 697614390
-      idle2_6: -1469945267
-      idle2_7: 1639213125
+      OrangePortal_0: 1315189028
+      OrangePortal_1: -1630453132
+      OrangePortal_10: -2059070457
+      OrangePortal_11: -241103296
+      OrangePortal_12: -1963734842
+      OrangePortal_13: 18819407
+      OrangePortal_14: 1525502875
+      OrangePortal_15: -2007569207
+      OrangePortal_2: 1631510400
+      OrangePortal_3: 1431404217
+      OrangePortal_4: -871799885
+      OrangePortal_5: 213700716
+      OrangePortal_6: -1757944042
+      OrangePortal_7: -222528829
+      OrangePortal_8: -612785363
+      OrangePortal_9: 1980728765
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

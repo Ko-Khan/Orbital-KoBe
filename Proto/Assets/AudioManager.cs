@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioClip background;
     [SerializeField] private AudioClip attack;
     [SerializeField] private AudioClip walk;
+    [SerializeField] private AudioClip portal;
     
 
 
@@ -32,6 +33,11 @@ public class AudioManager : MonoBehaviour
 
             case "Walk":
             sfx.clip = walk;
+            sfx.Play();
+            break;
+
+            case "Portal":
+            sfx.clip = portal;
             sfx.Play();
             break;
 

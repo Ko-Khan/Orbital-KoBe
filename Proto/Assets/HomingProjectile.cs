@@ -30,11 +30,20 @@ public class HomingProjectile : MonoBehaviour
 
         direction.Normalize();
 
-        float rotateAmount = Vector3.Cross(direction, transform.up).z;
+        float rotateAmount = Vector3.Cross(direction, transform.right).z;
 
         rb.angularVelocity = rotateAmount *rotateSpeed;
 
         rb.velocity = transform.right * -speed;
         
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if ( other == player.GetComponent<Collider2D>())
+        {
+            player.GetComponent<Health>().TakeDamage(10);
+        }
+        Destroy(gameObject);
     }
 }

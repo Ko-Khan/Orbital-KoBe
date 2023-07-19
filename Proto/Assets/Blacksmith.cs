@@ -46,13 +46,7 @@ public class Blacksmith : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (landing) 
-        {
-              transform.Translate(landingDirection * Time.deltaTime * speed);
-
-            
-
-        }
+        
 
         timeSinceLastSpinTrigger += Time.deltaTime;
 
@@ -92,34 +86,5 @@ public class Blacksmith : MonoBehaviour
 
         Instantiate(hammer, transform.position, Quaternion.identity);
         landingDirection = Player.transform.position - transform.position;
-        Invoke("land", 1.0f);
-        
-        
-    }
-
-    public void land()
-    {
-        landing = true;
-        animator.SetTrigger("Land");
-        
-
-    }
-
-    public void OnCollisionEnter2D(Collision2D other)
-    {
-        if (landing)
-        {
-            landing = false;
-            animator.SetTrigger("Touchdown");
         }
-
-        
-
-
-    }
-
-    void SpinDash()
-    {
-        animator.SetBool("Spin", true);
-    }
 }

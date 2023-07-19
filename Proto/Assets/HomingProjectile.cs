@@ -13,6 +13,8 @@ public class HomingProjectile : MonoBehaviour
 
     private Rigidbody2D rb;
 
+    private Animator animator;
+
 
 
 
@@ -20,7 +22,10 @@ public class HomingProjectile : MonoBehaviour
     void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
+
         rb = GetComponent<Rigidbody2D>();
+        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -30,11 +35,11 @@ public class HomingProjectile : MonoBehaviour
 
         direction.Normalize();
 
-        float rotateAmount = Vector3.Cross(direction, transform.right).z;
+        float rotateAmount = Vector3.Cross(direction, -transform.right).z;
 
         rb.angularVelocity = rotateAmount *rotateSpeed;
 
-        rb.velocity = transform.right * -speed;
+        rb.velocity = -transform.right * -speed;
         
     }
 
@@ -44,6 +49,11 @@ public class HomingProjectile : MonoBehaviour
         {
             player.GetComponent<Health>().TakeDamage(10);
         }
+        animator.SetTrigger("Boom");
+    }
+
+    void selfDestruct()
+    {
         Destroy(gameObject);
     }
 }

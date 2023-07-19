@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c159633b7dc48ac4b8578f0fbffe792f
+guid: 7d7b10038d346584a9ffce19e5a7efa0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: summon_0
+      name: HostileIdleReaper-Sheet_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 117
-        width: 45
-        height: 62
+        x: 14
+        y: 8
+        width: 28
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b67b4fe4a01d74142b782077b6f0e78e
-      internalID: 2014380444
+      spriteID: c1ee894866f647647bb38d0df5a630f7
+      internalID: 386495086
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: summon_1
+      name: HostileIdleReaper-Sheet_1
       rect:
         serializedVersion: 2
-        x: 134
-        y: 117
-        width: 48
-        height: 67
+        x: 62
+        y: 8
+        width: 28
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b4f67c57e7b05548849e5d87c2c8912
-      internalID: 416496228
+      spriteID: 7cafa474091cd1b44a311031f770684b
+      internalID: 1108319056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: summon_2
+      name: HostileIdleReaper-Sheet_2
       rect:
         serializedVersion: 2
-        x: 234
-        y: 117
-        width: 53
-        height: 73
+        x: 109
+        y: 8
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5340b5639b51f6d4da06247a04b17f42
-      internalID: -1267885247
+      spriteID: c12b22e9c8108cd488f3893a8c742fad
+      internalID: -1158389760
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: summon_3
+      name: HostileIdleReaper-Sheet_3
       rect:
         serializedVersion: 2
-        x: 334
-        y: 117
-        width: 55
-        height: 69
+        x: 157
+        y: 8
+        width: 29
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 964f9dc4bdaeead48ad416947fe898b9
-      internalID: -1754901391
+      spriteID: 1868b0986f86460499c270687e71a969
+      internalID: 813829001
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: summon_4
+      name: HostileIdleReaper-Sheet_4
       rect:
         serializedVersion: 2
-        x: 34
-        y: 17
-        width: 48
-        height: 67
+        x: 205
+        y: 8
+        width: 29
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6232a19c7b8f82442a9c8b7ea241c1e7
-      internalID: -798645039
+      spriteID: c9364826de091bc48a891a0bde76a8d5
+      internalID: -1279872628
       vertices: []
       indices: 
       edges: []
@@ -232,11 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      summon_0: 2014380444
-      summon_1: 416496228
-      summon_2: -1267885247
-      summon_3: -1754901391
-      summon_4: -798645039
+      HostileIdleReaper-Sheet_0: 386495086
+      HostileIdleReaper-Sheet_1: 1108319056
+      HostileIdleReaper-Sheet_2: -1158389760
+      HostileIdleReaper-Sheet_3: 813829001
+      HostileIdleReaper-Sheet_4: -1279872628
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

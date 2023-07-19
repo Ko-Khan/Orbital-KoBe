@@ -78,10 +78,31 @@ public class PlayerMovement : MonoBehaviour {
         {
             jumpNo = 1;
             t = 0;
-            
-            
         }
+
         jump();
+
+        //Make Playe fall faster
+        if (myRigidBody.velocity.y < 0 && myRigidBody.velocity.y > -10.0f)
+        {
+            myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y *1.3f);
+        }
+
+        /* The following if block ensures that the player's jump height varies 
+        depending on how long the jump button is held down */
+        if (!IsGrounded() && !(Input.GetKey(KeyCode.Space)) && myRigidBody.velocity.y > 0)
+        {
+            myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y * 0.5f);
+        }
+
+        //This if block allows player to hang in the air at max jump for a while longer
+        if (!(IsGrounded() && Mathf.Abs(myRigidBody.velocity.y) < 0.1f )) 
+        {
+            myRigidBody.gravityScale = 1.0f;
+
+        } else {
+            myRigidBody.gravityScale = 3.0f;
+        }
         
     }
 

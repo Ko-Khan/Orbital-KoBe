@@ -18,7 +18,8 @@ public class Checkpoint : MonoBehaviour
         if (other.CompareTag("Player") && !reached) {
             reached = true;
             animator.SetBool("CheckpointReached", true);
-            other.gameObject.GetComponent<Respawn>().updateRespawnPoint(this.transform.position);
+            //other.gameObject.GetComponent<Respawn>().updateRespawnPoint(this.transform.position);
+            other.gameObject.GetComponent<Player>().SavePlayerInfo();
         }
     }
 }

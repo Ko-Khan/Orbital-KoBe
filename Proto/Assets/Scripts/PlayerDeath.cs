@@ -25,6 +25,8 @@ public class PlayerDeath : MonoBehaviour
     public void continueButton() {
         gameObject.SetActive(false);
         player.GetComponent<Health>().Revive();
+        player.GetComponent<Player>().LoadPlayerInfo();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
         
 }

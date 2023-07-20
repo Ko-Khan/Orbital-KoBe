@@ -19,13 +19,12 @@ public class PlayerDeath : MonoBehaviour
     }
 
     public void restartButton() {
+        Player.continueOn = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void continueButton() {
-        gameObject.SetActive(false);
-        player.GetComponent<Health>().Revive();
-        player.GetComponent<Player>().LoadPlayerInfo();
+        Player.continueOn = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
         

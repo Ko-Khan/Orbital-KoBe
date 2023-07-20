@@ -6,11 +6,17 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public string level;
+    public static bool continueOn;
 
     public void Start() {
-        this.level = SceneManager.GetActiveScene().name;
-        SavePlayerInfo();
-        //DontDestroyOnLoad(this.gameObject);
+        
+        if (continueOn) {
+            LoadPlayerInfo();            
+        } else {
+            this.level = SceneManager.GetActiveScene().name;
+            SavePlayerInfo();
+        }
+        
     }
    
     public void SavePlayerInfo() {

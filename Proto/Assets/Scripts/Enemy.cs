@@ -19,8 +19,6 @@ public class Enemy : MonoBehaviour
       
     public void TakeDamage(int damage) {
         currentHealth -= damage;
-
-        Debug.Log("Ow");
         GetComponent<Animator>().SetTrigger("TakeDamage");
 
         if (currentHealth <= 0) {
@@ -31,7 +29,7 @@ public class Enemy : MonoBehaviour
 
 
     private void Die() {
-       // GetComponent<Collider2D>().enabled = false;
+        GetComponent<Collider2D>().enabled = false;
         GetComponent<Animator>().SetBool("IsDead", true);
         
     }
@@ -39,7 +37,5 @@ public class Enemy : MonoBehaviour
     private void destroyObject() {
         GetComponent<SpriteRenderer>().enabled = false;
         Destroy(gameObject);
-
-
     }
 }

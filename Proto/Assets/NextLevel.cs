@@ -5,12 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class NextLevel : MonoBehaviour
 {
-    private GameObject Player;
     [SerializeField] private string nextLevelName;
     // Start is called before the first frame update
     void Start()
     {
-        Player = GameObject.FindWithTag("Player");
+        
         
     }
 
@@ -22,8 +21,9 @@ public class NextLevel : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
+            Player.continueOn = false;
             SceneManager.LoadScene(nextLevelName, LoadSceneMode.Single);
 
         }

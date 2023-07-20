@@ -88,12 +88,12 @@ public class PlayerMovement : MonoBehaviour {
             myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y *1.3f);
         }
 
-        /* The following if block ensures that the player's jump height varies 
-        depending on how long the jump button is held down */
-        if (!IsGrounded() && !(Input.GetKey(KeyCode.Space)) && myRigidBody.velocity.y > 0)
-        {
-            myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y * 0.5f);
-        }
+        // /* The following if block ensures that the player's jump height varies 
+        // depending on how long the jump button is held down */
+        // if (!IsGrounded() && !(Input.GetKey(KeyCode.Space)) && myRigidBody.velocity.y > 0)
+        // {
+        //     myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y * 0.5f);
+        // }
 
         //This if block allows player to hang in the air at max jump for a while longer
         if (!(IsGrounded() && Mathf.Abs(myRigidBody.velocity.y) < 0.1f )) 

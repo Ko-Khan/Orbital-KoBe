@@ -20,4 +20,5 @@ public class Respawn : MonoBehaviour {
     public void updateRespawnPoint(Vector3 checkpoint) {
         respawnPoint = checkpoint;
     }
+
 }

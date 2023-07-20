@@ -62,6 +62,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6b5255fbeb028f4d8ef751dc3ff6666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-4933150894811164887
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92741a9b6decda4dbd58ff3119b2a19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minDistance: 1
+  speed: 2
 --- !u!1101 &-4892539750252025602
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -71,7 +85,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Summon
+    m_ConditionEvent: summon
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3838937837535719461}
@@ -199,7 +213,7 @@ AnimatorController:
   m_Name: Reaper
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Summon
+  - m_Name: summon
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -281,7 +295,8 @@ AnimatorState:
   - {fileID: -4892539750252025602}
   - {fileID: -4230271558737234686}
   - {fileID: -4085114829262058155}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -4933150894811164887}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -310,16 +325,16 @@ AnimatorStateMachine:
     m_Position: {x: 360, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -51203302110011492}
-    m_Position: {x: 380, y: 20, z: 0}
+    m_Position: {x: 630, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3838937837535719461}
-    m_Position: {x: 350, y: 250, z: 0}
+    m_Position: {x: 360, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8918078695076926886}
     m_Position: {x: 620, y: 150, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 9173783118962984822}
-    m_Position: {x: 370, y: 50, z: 0}
+    m_Position: {x: 360, y: 60, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []

@@ -2,24 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lifetime : MonoBehaviour
+public class Summon : MonoBehaviour
 {
-
-    [SerializeField] private float lifeTime;
     // Start is called before the first frame update
+
+    [SerializeField] private GameObject minion;
+
+
     void Start()
     {
-        lifeTime += Time.time;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > lifeTime)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
-    
+   public void summon()
+    {
+        Instantiate(minion, transform.position, transform.rotation);
+    }
 }

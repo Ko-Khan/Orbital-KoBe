@@ -28,7 +28,7 @@ public class Portal : MonoBehaviour
         if (Vector2.Distance(other.transform.position, transform.position) > distance)
         {
             GameObject.FindWithTag("Audio").GetComponent<AudioManager>().PlaySFX("Portal");
-            player.transform.position = new Vector2(destination.position.x, destination.position.y);
+            player.transform.position = new Vector2(destination.position.x , destination.position.y);
         }
     }
 

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7386068988221841510}
   - component: {fileID: 7386068988221841504}
   - component: {fileID: 7386068988221841507}
+  - component: {fileID: -5787384095684682878}
   m_Layer: 0
   m_Name: Skull
   m_TagString: Untagged
@@ -100,8 +101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b4527091e5f1134cb40d23bc03288fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  rotateSpeed: 200
+  speed: 4
+  rotateSpeed: 100
 --- !u!50 &7386068988221841510
 Rigidbody2D:
   serializedVersion: 4
@@ -160,3 +161,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-5787384095684682878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386068988221841531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 066958fdcd82a5c4b96893198b6670de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 4

@@ -2,24 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lifetime : MonoBehaviour
+public class SpiritSummon : MonoBehaviour
 {
 
-    [SerializeField] private float lifeTime;
+    public Summon[] summons;
+
     // Start is called before the first frame update
     void Start()
     {
-        lifeTime += Time.time;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time > lifeTime)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
-    
+    void Summon()
+    {
+        foreach (Summon s in summons)
+        {
+            s.summon();
+        }
+    }
 }

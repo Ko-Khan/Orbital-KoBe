@@ -11,6 +11,7 @@ public class Witch : MonoBehaviour
     [SerializeField] private float downTime;
     [SerializeField] private GameObject minion;
     private float waitTime;
+    public GameObject SceneTransition;
 
     // Start is called before the first frame update
     void Start()
@@ -40,5 +41,9 @@ public class Witch : MonoBehaviour
             Instantiate(minion, t.position, t.rotation);
         }
 
+    }
+
+    void SpawnNextSceneTransition() {
+        SceneTransition.SetActive(true);
     }
 }

@@ -15,6 +15,7 @@ TagManager:
   - Audio
   - Spin1
   - Spin2
+  - SceneTransition
   layers:
   - Default
   - TransparentFX

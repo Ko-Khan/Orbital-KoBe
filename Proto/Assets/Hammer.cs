@@ -53,6 +53,6 @@ public class Hammer : MonoBehaviour
         if (other.gameObject.CompareTag("Platform"))
         {
         Destroy(gameObject);
-    }
+        }
     }
 }

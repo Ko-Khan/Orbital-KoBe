@@ -19,19 +19,18 @@ public class Reaper_Dash : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       if (Boss.GetComponent<ReaperDash>().reachedEnd())
-       {
-        animator.SetBool("Dash", false);
-        
-       } else {
-        Boss.GetComponent<ReaperDash>().Dash();
-       }
+      if (Boss.GetComponent<ReaperDash>().reachedEnd())
+      {
+         animator.SetBool("Dash", false);        
+      } else {
+         Boss.GetComponent<ReaperDash>().Dash();
+      }
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-       Boss.GetComponent<EnemyFlip>().enabled = true;
+      Boss.GetComponent<EnemyFlip>().enabled = true;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

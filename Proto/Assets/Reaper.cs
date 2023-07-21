@@ -15,6 +15,8 @@ public class Reaper : MonoBehaviour
 
     private float dashWait;
 
+    public GameObject SceneTransition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,5 +39,9 @@ public class Reaper : MonoBehaviour
         dashWait = Time.time + dashCoolDown;
         animator.SetBool("Dash", true);
        }
+    }
+
+    void SpawnNextSceneTransition() {
+        SceneTransition.SetActive(true);
     }
 }

@@ -5,11 +5,13 @@ using UnityEngine;
 public class ReaperDash : MonoBehaviour
 {
 
-    [SerializeField] private Transform dashStart;
+    [SerializeField] public Transform dashStart;
 
-    [SerializeField] private Transform dashEnd;
+    [SerializeField] public Transform dashEnd;
 
     [SerializeField] private float speed;
+
+    private Vector3 goBackTo;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,15 +26,15 @@ public class ReaperDash : MonoBehaviour
 
     public void Begin()
     {
+        goBackTo = dashEnd.position;
         transform.position = dashStart.position;
     }
 
     public bool reachedEnd()
     {
-        if (transform.position.x >= dashEnd.position.x)
+        if (transform.position.x == goBackTo.x)
         {
             return true;
-
         }
 
         return false;
@@ -40,6 +42,6 @@ public class ReaperDash : MonoBehaviour
 
     public void Dash()
     {
-        transform.position = Vector2.MoveTowards(transform.position, dashEnd.position, Time.deltaTime * speed);
+        transform.position = Vector2.MoveTowards(transform.position, goBackTo, Time.deltaTime * speed);
     }
 }

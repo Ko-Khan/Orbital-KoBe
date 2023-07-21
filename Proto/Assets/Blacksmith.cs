@@ -30,6 +30,8 @@ public class Blacksmith : MonoBehaviour
 
     private float timeSinceLastLeapTrigger = 0.0f; 
 
+    public GameObject SceneTransition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -90,5 +92,9 @@ public class Blacksmith : MonoBehaviour
 
     public void Land(float airTime) {
         StartCoroutine(MakeLandingIn(airTime));
+    }
+
+    void SpawnNextSceneTransition() {
+        SceneTransition.SetActive(true);
     }
 }

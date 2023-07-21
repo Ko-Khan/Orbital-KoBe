@@ -5,13 +5,13 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
 
-    public int health;
-    private int currentHealth;
+    public int maxHealth;
+    public int currentHealth;
 
 
     // Start is called before the first frame update
     void Start() {
-        currentHealth = health;
+        currentHealth = maxHealth;
         GetComponent<Animator>().SetBool("IsDead", false);
         GetComponent<Animator>().ResetTrigger("TakeDamage");
     }

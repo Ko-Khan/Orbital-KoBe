@@ -73,18 +73,22 @@ public class Blacksmith : MonoBehaviour
 
     void leap()
     {
-
         transform.position = jump.position;
         animator.SetTrigger("Launch");
-
-
     }
 
     void Throw()
     {
-
-
         Instantiate(hammer, transform.position, Quaternion.identity);
         landingDirection = Player.transform.position - transform.position;
-        }
+    }
+ 
+    public IEnumerator MakeLandingIn(float airTime) {
+        yield return new WaitForSeconds(airTime);
+        GetComponent<Rigidbody2D>().WakeUp();
+    }
+
+    public void Land(float airTime) {
+        StartCoroutine(MakeLandingIn(airTime));
+    }
 }

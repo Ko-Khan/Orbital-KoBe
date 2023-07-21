@@ -26,10 +26,10 @@ public class Boss_Jump : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (Boss.transform.position.y >= jump.transform.position.y) 
-        {
+        //if (Boss.transform.position.y >= jump.transform.position.y) 
+        //{
             animator.SetTrigger("Hover");
-        }
+        //}
        Boss.transform.position = Vector2.MoveTowards(Boss.transform.position, jump.transform.position, speed * Time.deltaTime);
     }
 

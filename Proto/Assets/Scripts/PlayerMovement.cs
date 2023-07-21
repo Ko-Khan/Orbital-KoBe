@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour {
     public float walkingSpeed;
     
     public float jumpForce;
+
+    public float trampTime;
     
     public float bufferDistance;
 
@@ -90,15 +92,15 @@ public class PlayerMovement : MonoBehaviour {
 
         // /* The following if block ensures that the player's jump height varies 
         // depending on how long the jump button is held down */
-        // if (!IsGrounded() && !(Input.GetKey(KeyCode.Space)) && myRigidBody.velocity.y > 0)
-        // {
-        //     myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y * 0.5f);
-        // }
+        if (!IsGrounded() && !(Input.GetKey(KeyCode.Space)) && myRigidBody.velocity.y > 0 && Time.time > trampTime)
+        {
+            myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, myRigidBody.velocity.y * 0.5f);
+        }
 
         //This if block allows player to hang in the air at max jump for a while longer
         if (!(IsGrounded() && Mathf.Abs(myRigidBody.velocity.y) < 0.1f )) 
         {
-            myRigidBody.gravityScale = 1.0f;
+            myRigidBody.gravityScale = 2.0f;
 
         } else {
             myRigidBody.gravityScale = 3.0f;

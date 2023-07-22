@@ -10,16 +10,15 @@ GameObject:
   m_Component:
   - component: {fileID: 6238234936551035799}
   - component: {fileID: 5957802340666822400}
-  - component: {fileID: 9147469875958559169}
   - component: {fileID: 2773064802659941310}
   - component: {fileID: 687398345770999662}
   - component: {fileID: 3702037629836912773}
   - component: {fileID: 8634939021426107057}
   - component: {fileID: 3545458946736499251}
   - component: {fileID: 3545458946736499260}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: GhostBody
-  m_TagString: Enemy
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,21 +60,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &9147469875958559169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3545458946736499261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c46051acac5d6174ea8615d51cb68d7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 0
-  currentHealth: 0
-  healthbar: {fileID: 946806841559714244}
 --- !u!212 &2773064802659941310
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -218,7 +202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8407887501196051954}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ghostPoint3
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -249,7 +233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8074839888631265794}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: ghostPoint4
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -280,9 +264,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9062552552869783114}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Ghost (2)
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,6 +296,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6238234936551035799}
     m_Modifications:
+    - target: {fileID: 7146619169062878417, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146619169545847573, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7146619169850790384, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7146619170533791538, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -320,9 +316,17 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7146619170533791543, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8773656454945445992, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
       propertyPath: m_Name
       value: EnemyHealth
+      objectReference: {fileID: 0}
+    - target: {fileID: 8773656454945445992, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8773656454945445992, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
       propertyPath: m_IsActive
@@ -426,17 +430,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
---- !u!114 &946806841559714244 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7146619170341345493, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}
-  m_PrefabInstance: {fileID: 7930381045376143633}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b53e3f576705420458e16bee6c807054, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &1714769217711294840 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8773656454945445993, guid: 3ee546d3d2bd0e142ae45022b11b85d9, type: 3}

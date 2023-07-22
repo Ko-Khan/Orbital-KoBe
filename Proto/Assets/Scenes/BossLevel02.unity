@@ -22402,6 +22402,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &263317062 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7159123999992773865, guid: 8836fde857159bd46b9d0515c82986bb, type: 3}
+  m_PrefabInstance: {fileID: 7159123999550969694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &523603656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22538,6 +22543,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2191306720265082316, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
+      propertyPath: m_Maskable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2191306720265082316, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2704892257382766365, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -22634,6 +22647,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3838946389799869258, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4066185316293834132, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4823590069770770238, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5179072025247399141, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -22642,6 +22667,18 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 905908948}
+    - target: {fileID: 6694450045728424792, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8639177831083959788, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
+      propertyPath: SFX
+      value: 
+      objectReference: {fileID: 263317062}
+    - target: {fileID: 8639177831083959788, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
+      propertyPath: music
+      value: 
+      objectReference: {fileID: 1941339918}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a7cdb022035e4fe4bb337faba17ae064, type: 3}
 --- !u!1001 &905908947
@@ -22810,6 +22847,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53e3f576705420458e16bee6c807054, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &1941339918 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7159123999935220509, guid: 8836fde857159bd46b9d0515c82986bb, type: 3}
+  m_PrefabInstance: {fileID: 7159123999550969694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2128758998
 GameObject:
   m_ObjectHideFlags: 0

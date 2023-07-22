@@ -22,7 +22,6 @@ public class Boss_Air : StateMachineBehaviour
    {
       //if (Time.deltaTime > waitTime)
       //{
-         //boss.GetComponent<Rigidbody2D>().WakeUp();
          boss.GetComponent<Blacksmith>().Land(2f);
          animator.SetTrigger("Land");
       //}

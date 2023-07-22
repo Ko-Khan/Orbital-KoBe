@@ -8,7 +8,13 @@ public class Blacksmith : MonoBehaviour
 
     public float speed;
 
-    public Transform jump;
+    public Transform jump1;
+
+    public Transform jump2;
+
+    public Transform jump3;
+
+    public static bool jumpUp;
 
     public Transform spinPoint1;
 
@@ -39,10 +45,7 @@ public class Blacksmith : MonoBehaviour
 
         Player = GameObject.FindWithTag("Player");
 
-        
-
-        
-        
+        jumpUp = false;
     }
 
     // Update is called once per frame
@@ -73,11 +76,11 @@ public class Blacksmith : MonoBehaviour
         
     }
 
-    void leap()
-    {
-        transform.position = jump.position;
-        animator.SetTrigger("Launch");
-    }
+    // void leap(Vector3 jumpPosition)
+    // {
+    //     transform.position = jumpPosition;
+    //     animator.SetTrigger("Launch");
+    // }
 
     void Throw()
     {
@@ -92,6 +95,19 @@ public class Blacksmith : MonoBehaviour
 
     public void Land(float airTime) {
         StartCoroutine(MakeLandingIn(airTime));
+    }
+
+    public IEnumerator JumpFor(float duration, Vector3 jumpPosition, float speed) {
+        transform.position = Vector2.MoveTowards(transform.position, jumpPosition, speed * Time.deltaTime);
+        yield return new WaitForSeconds(duration);
+
+        if (jumpUp) {
+            jumpUp = false;
+        }
+    }
+
+    public void Jump(float duration, Vector3 jumpPosition, float speed) {
+        StartCoroutine(JumpFor(duration, jumpPosition, speed));
     }
 
     void SpawnNextSceneTransition() {

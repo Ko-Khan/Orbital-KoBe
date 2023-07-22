@@ -363,7 +363,6 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -4892539750252025602}
-  - {fileID: -4230271558737234686}
   - {fileID: 8128964245542699284}
   m_StateMachineBehaviours:
   - {fileID: -1040957502138057718}

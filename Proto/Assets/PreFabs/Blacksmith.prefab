@@ -39,8 +39,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2339472487688294110}
-  - {fileID: 2339472489127242588}
-  - {fileID: 2339472487597119153}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -111,10 +109,11 @@ MonoBehaviour:
   hammer: {fileID: 2655017823426613808, guid: 5b5522177ff5b444ea56973a36c7706b, type: 3}
   speed: 3
   jump: {fileID: 2339472487688294110}
-  spinPoint1: {fileID: 2339472489127242588}
-  spinPoint2: {fileID: 2339472487597119153}
+  spinPoint1: {fileID: 0}
+  spinPoint2: {fileID: 0}
   special1Cooldown: 7
   special2Cooldown: 15
+  SceneTransition: {fileID: 0}
 --- !u!95 &2339472487378671424
 Animator:
   serializedVersion: 5
@@ -182,7 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c46051acac5d6174ea8615d51cb68d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 400
+  maxHealth: 0
+  currentHealth: 0
 --- !u!61 &2339472487378671431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -259,37 +259,6 @@ MonoBehaviour:
   Damage: 8
   Force: 4
   knockedBackDistance: 4
---- !u!1 &2339472487597119166
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2339472487597119153}
-  m_Layer: 10
-  m_Name: SpinPoint (1)
-  m_TagString: Spin2
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2339472487597119153
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2339472487597119166}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.1387382, y: 0.32573906, z: 0}
-  m_LocalScale: {x: 1.3608589, y: 1.3608592, z: 1.3608592}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2339472487378671425}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2339472487688294111
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,35 +289,4 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2339472487378671425}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2339472489127242589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2339472489127242588}
-  m_Layer: 10
-  m_Name: SpinPoint
-  m_TagString: Spin1
-  m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2339472489127242588
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2339472489127242589}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.1638904, y: 0.33135524, z: 0}
-  m_LocalScale: {x: 1.3608589, y: 1.3608592, z: 1.3608592}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2339472487378671425}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

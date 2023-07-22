@@ -29,6 +29,12 @@ public class EnemyFlip : MonoBehaviour
             localScale.x *= -1f;        
             transform.localScale = localScale;
 
+            if (this.gameObject.name == "Blacksmith") {
+                Transform temp = GetComponent<Blacksmith>().spinPoint1;
+                GetComponent<Blacksmith>().spinPoint1 = GetComponent<Blacksmith>().spinPoint2;
+                GetComponent<Blacksmith>().spinPoint2 = temp;
+            }
+
             if (this.gameObject.name == "Reaper") {
                 Transform temp = GetComponent<ReaperDash>().dashStart;
                 GetComponent<ReaperDash>().dashStart = GetComponent<ReaperDash>().dashEnd;

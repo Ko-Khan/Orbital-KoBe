@@ -8,9 +8,9 @@ public class Boss_Spin : StateMachineBehaviour
 
     private GameObject Boss;
 
-    public GameObject spinPoint1;
+    public Transform spinPoint1;
 
-    public GameObject spinPoint2;
+    public Transform spinPoint2;
 
     private bool spin1;
 
@@ -19,14 +19,11 @@ public class Boss_Spin : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-      spinPoint1 = new GameObject();
-      spinPoint2 = new GameObject();
-
        Boss = animator.gameObject;
 
-       spinPoint1.transform.position = Boss.GetComponent<Blacksmith>().spinPoint1.position;
+       spinPoint1 = Boss.GetComponent<Blacksmith>().spinPoint1;
 
-       spinPoint2.transform.position = Boss.GetComponent<Blacksmith>().spinPoint2.position;
+       spinPoint2 = Boss.GetComponent<Blacksmith>().spinPoint2;
 
        spin1 = false;
        spin2 = false;
@@ -36,19 +33,22 @@ public class Boss_Spin : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+      spinPoint1 = Boss.GetComponent<Blacksmith>().spinPoint1;
+      spinPoint2 = Boss.GetComponent<Blacksmith>().spinPoint2;
+
        if (!spin1)
        {
-        Boss.transform.position = Vector2.MoveTowards(Boss.transform.position, spinPoint1.transform.position, speed * Time.deltaTime);
+        Boss.transform.position = Vector2.MoveTowards(Boss.transform.position, spinPoint1.position, speed * Time.deltaTime);
 
-        if (Boss.transform.position.x <= spinPoint1.transform.position.x) {
+        if (Boss.transform.position.x <= spinPoint1.position.x) {
          spin1 = true;
         }
 
        } else if (!spin2)
        {
-        Boss.transform.position = Vector2.MoveTowards(Boss.transform.position, spinPoint2.transform.position, speed * Time.deltaTime);
+        Boss.transform.position = Vector2.MoveTowards(Boss.transform.position, spinPoint2.position, speed * Time.deltaTime);
 
-        if (Boss.transform.position.x >= spinPoint2.transform.position.x) {
+        if (Boss.transform.position.x >= spinPoint2.position.x) {
          spin2 = true;
         }
 

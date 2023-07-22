@@ -9,18 +9,36 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScreen.unity
     guid: afdbb0077712b9c49a88909a480ea401
   - enabled: 1
-    path: Assets/Scenes/Kokhant.unity
-    guid: c765cd1c52ba1654fa0793a3e60cea22
+    path: Assets/Scenes/Level00.unity
+    guid: e69687d0f060c594ea21a06d7f429385
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 412e667c7071c004fab9460a259294e6
+  - enabled: 1
+    path: Assets/Scenes/WitchLevel.unity
+    guid: a45e60ec302779e4e92d362a46577000
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 959ba230d31a413408d9993151069598
+  - enabled: 1
+    path: Assets/Scenes/Level01.unity
+    guid: 656c26f060865f54ea04cd7aef8fa878
+  - enabled: 1
+    path: Assets/Scenes/ReaperLevel.unity
+    guid: 8d57e8ec9ea398141be03199294c710b
+  - enabled: 1
+    path: Assets/Scenes/Level02.unity
+    guid: f654e0069e9bbe64481a7bef7412183c
+  - enabled: 1
+    path: Assets/Scenes/Level03.unity
+    guid: f55d0157c3cb40242b8c8c2dc1b350d7
+  - enabled: 1
+    path: Assets/Scenes/BlacksmithLevel.unity
+    guid: 0b986badc6c3e5344a69a12620910869
   - enabled: 1
     path: Assets/Scenes/EndScreen.unity
     guid: 41145cc9b43bbeb4ab339ceb758ea291
   - enabled: 1
     path: Assets/Scenes/ControlsScreen.unity
     guid: 87f8117201c12eb4cb6e77f46723c9a6
-  - enabled: 1
-    path: Assets/Scenes/Level02.unity
-    guid: f654e0069e9bbe64481a7bef7412183c
-  - enabled: 1
-    path: Assets/Scenes/BossLevel01.unity
-    guid: a45e60ec302779e4e92d362a46577000
   m_configObjects: {}

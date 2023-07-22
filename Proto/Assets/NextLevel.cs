@@ -24,7 +24,7 @@ public class NextLevel : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Player.continueOn = false;
-            SceneManager.LoadScene(nextLevelName, LoadSceneMode.Single);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         }
 

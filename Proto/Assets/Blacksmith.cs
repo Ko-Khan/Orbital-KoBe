@@ -46,6 +46,8 @@ public class Blacksmith : MonoBehaviour
         Player = GameObject.FindWithTag("Player");
 
         jumpUp = false;
+
+        GetComponent<Rigidbody2D>().isKinematic = false;
     }
 
     // Update is called once per frame

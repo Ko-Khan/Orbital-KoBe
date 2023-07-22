@@ -24,9 +24,9 @@ public class PauseMenu : MonoBehaviour
     {
         Paused = false;
 
-        music.volume = 0.2f;
+        music.volume = 0.1f;
 
-        musicSlider.value = 0.2f;
+        musicSlider.value = 0.1f;
 
         SFX.volume = 0.8f;
 

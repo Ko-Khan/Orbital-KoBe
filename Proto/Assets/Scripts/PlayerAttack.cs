@@ -17,12 +17,11 @@ public class PlayerAttack : MonoBehaviour
   void Update()
   {
     if (Input.GetKeyDown(KeyCode.F)) {
-      Attack();
+      GetComponent<Animator>().SetTrigger("Attack");
     }
   }
 
   private void Attack() {
-    GetComponent<Animator>().SetTrigger("Attack");
     GameObject.FindWithTag("Audio").GetComponent<AudioManager>().PlaySFX("Attack");
     
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
@@ -31,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
      }
     foreach(Collider2D enemy in hitenemies) {
       if (enemy.CompareTag("Enemy")) {
-        enemy.GetComponent<Enemy>().TakeDamage(attackingPower);
+        enemy.gameObject.GetComponent<Enemy>().TakeDamage(attackingPower);
       }  
     }
   }

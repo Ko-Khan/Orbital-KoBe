@@ -45,11 +45,12 @@ public class HomingProjectile : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if ( other == player.GetComponent<Collider2D>())
+        if (other == player.GetComponent<Collider2D>())
         {
             player.GetComponent<Health>().TakeDamage(10);
+            animator.SetTrigger("Boom");
         }
-        animator.SetTrigger("Boom");
+        
     }
 
     void selfDestruct()

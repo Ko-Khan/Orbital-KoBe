@@ -24,13 +24,6 @@ public class PauseMenu : MonoBehaviour
     {
         Paused = false;
 
-        music.volume = 0.1f;
-
-        musicSlider.value = 0.1f;
-
-        SFX.volume = 0.8f;
-
-        sfxSlider.value = 0.8f;
     }
 
     // Update is called once per frame

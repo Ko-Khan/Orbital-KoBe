@@ -22,8 +22,6 @@ public class PlayerAttack : MonoBehaviour
   }
 
   private void Attack() {
-    GameObject.FindWithTag("Audio").GetComponent<AudioManager>().PlaySFX("Attack");
-    
     Collider2D[] hitenemies = Physics2D.OverlapAreaAll(transform.position, edge.position, enemyMask);
      if (hitenemies != null) {
       Debug.Log("Ow");
@@ -33,6 +31,10 @@ public class PlayerAttack : MonoBehaviour
         enemy.gameObject.GetComponent<Enemy>().TakeDamage(attackingPower);
       }  
     }
+  }
+
+  public void playAttackSound() {
+    GameObject.FindWithTag("Audio").GetComponent<AudioManager>().PlaySFX("Attack");
   }
 
   void OnDrawGizmosSelected() {

@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
 
     public bool Paused;
+
+    public AudioMixer mixer;
 
     public GameObject pauseMenuUI;
 
@@ -23,6 +27,8 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         Paused = false;
+
+        SetSliders();
 
     }
 
@@ -76,12 +82,23 @@ public class PauseMenu : MonoBehaviour
      public void SetVolumeMusic()
    { 
     //   audioMixer.SetFloat("volume", volume);
-     music.volume = musicSlider.value;
+    mixer.SetFloat("MusicVolume", musicSlider.value);
+    PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
    }
 
    public void SetVolumeSFX()
    {
-     SFX.volume = sfxSlider.value;
+    mixer.SetFloat("SFXVolume", sfxSlider.value);
+    PlayerPrefs.SetFloat("SFXVolume", sfxSlider.value);
+   }
+
+// This is used at at the start of each scene, it chould set the valuenof each slider to the player's preference
+   void SetSliders()
+   {
+
+    musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+    sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume");
+
    }
 
 

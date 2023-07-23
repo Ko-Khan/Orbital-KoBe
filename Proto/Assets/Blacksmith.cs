@@ -38,6 +38,8 @@ public class Blacksmith : MonoBehaviour
 
     public GameObject SceneTransition;
 
+    public bool isAlive;
+
     // Start is called before the first frame update
     void Start()
     {

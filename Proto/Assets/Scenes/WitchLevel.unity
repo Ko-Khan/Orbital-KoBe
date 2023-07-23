@@ -23007,7 +23007,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987193119}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.2, y: -2.2, z: -0.010685325}
+  m_LocalPosition: {x: -7.06, y: -2.2, z: -0.010685325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -23046,7 +23046,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993016147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.38908, y: -15.91, z: 0.49646813}
+  m_LocalPosition: {x: -11.37, y: -15.91, z: 0.49646813}
   m_LocalScale: {x: 9.305939, y: 9.305939, z: 9.305939}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -23181,6 +23181,7 @@ MonoBehaviour:
   maxHealth: 1000
   currentHealth: 0
   healthbar: {fileID: 1938238513}
+  isAlive: 0
 --- !u!114 &993016155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23214,7 +23215,7 @@ MonoBehaviour:
   - {fileID: 1521338622}
   - {fileID: 987193120}
   - {fileID: 1172142520}
-  downTime: 10
+  downTime: 12
   minion: {fileID: 4578118756251112009, guid: 9f7a30c2175f0ad4cb9c4f06ed49e92e, type: 3}
   SceneTransition: {fileID: 1962045572}
 --- !u!114 &993016157

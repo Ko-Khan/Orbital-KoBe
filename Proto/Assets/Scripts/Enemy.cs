@@ -8,12 +8,14 @@ public class Enemy : MonoBehaviour
     public int maxHealth;
     public int currentHealth;
     public Healthbar healthbar;
+    public bool isAlive;
 
 
     // Start is called before the first frame update
     void Start() {
         currentHealth = maxHealth;
         healthbar.setMaxHealth(maxHealth);
+        isAlive = true;
         GetComponent<Animator>().SetBool("IsDead", false);
         GetComponent<Animator>().ResetTrigger("TakeDamage");
     }
@@ -34,9 +36,10 @@ public class Enemy : MonoBehaviour
 
 
     private void Die() {
+        isAlive = false;
         GetComponent<Collider2D>().enabled = false;
-        GetComponent<Animator>().SetBool("IsDead", true);
-        
+        GetComponent<Animator>().SetBool("IsDead", true);       
+        GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
     }
 
     private void destroyObject() {

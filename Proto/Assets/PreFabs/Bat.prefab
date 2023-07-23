@@ -140,6 +140,7 @@ MonoBehaviour:
   maxHealth: 25
   currentHealth: 0
   healthbar: {fileID: 3702379288278000982}
+  isAlive: 0
 --- !u!114 &4578118756251112002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCoolDown: 2
-  damage: 25
+  damage: 4
   range: 0.1
   boxCollider: {fileID: 4578118756251112005}
   playerLayer:
@@ -220,7 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   home: {fileID: 4578118755437037126}
   speed: 2
-  size: 6
+  size: 10
   playerLayer:
     serializedVersion: 2
     m_Bits: 8

@@ -47,6 +47,8 @@ public class Health : MonoBehaviour {
         healthbar.setHealth(currentHealth);
         GetComponent<Animator>().SetBool("IsDead", true);
         GetComponent<PlayerMovement>().enabled = false;
+        GetComponent<PlayerAttack>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
         yield return new WaitForSeconds(1.5f);
         PlayerDeath.triggerDeathScreen();
     }

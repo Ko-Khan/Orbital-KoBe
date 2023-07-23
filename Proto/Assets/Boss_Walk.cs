@@ -24,7 +24,7 @@ public class Boss_Walk : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-         if (Vector2.Distance(Boss.transform.position, Player.transform.position) > minDistance) 
+         if (Boss.GetComponent<Enemy>().isAlive && Vector2.Distance(Boss.transform.position, Player.transform.position) > minDistance) 
          {
             
             Boss.transform.position = new Vector2((Vector2.MoveTowards(Boss.transform.position, Player.transform.position, speed * Time.deltaTime)).x,

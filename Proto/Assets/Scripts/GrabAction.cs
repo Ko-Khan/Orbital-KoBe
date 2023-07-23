@@ -34,20 +34,10 @@ public class GrabAction : MonoBehaviour
 
                 grabPredicate.collider.gameObject.transform.position = boxHolder.position;
 
-                grabPredicate.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-
-                //GetComponent<Rigidbody2D>().isKinematic = true;
-
-                //GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
-
                 PlayerMovement.notPulling = false;
             } else {
 
                 grabPredicate.collider.gameObject.transform.parent = null;
-
-                grabPredicate.collider.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
-
-                //GetComponent<Rigidbody2D>().isKinematic = false;
 
                 GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 

@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpeedBoost : MonoBehaviour
 {
     public Animator animator;
+    public GameObject playerEffects;
     public float buffDuration = 10f;
     public float movementSpeedMultiplier = 1.5f;
 
@@ -25,6 +26,8 @@ public class SpeedBoost : MonoBehaviour
     private IEnumerator Pickup(Collider2D player) {
         animator.SetTrigger("PickUp");
 
+        playerEffects.SetActive(true);
+
         PlayerMovement attributes = player.GetComponent<PlayerMovement>();
         
         attributes.walkingSpeed *= movementSpeedMultiplier;
@@ -36,6 +39,8 @@ public class SpeedBoost : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
 
         yield return new WaitForSeconds(buffDuration);
+
+        playerEffects.SetActive(false);
 
         attributes.walkingSpeed /= movementSpeedMultiplier;
 

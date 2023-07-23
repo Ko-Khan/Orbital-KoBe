@@ -6,6 +6,7 @@ public class JumpBoost10s : MonoBehaviour
 {
 
     public Animator animator;
+    public GameObject playerEffects;
     public float buffDuration = 10f;
     public float jumpForceMultiplier = 1.5f;
 
@@ -26,6 +27,8 @@ public class JumpBoost10s : MonoBehaviour
     private IEnumerator Pickup(Collider2D player) {
         animator.SetTrigger("PickUp");
 
+        playerEffects.SetActive(true);
+
         PlayerMovement attributes = player.GetComponent<PlayerMovement>();
         
         attributes.jumpForce *= jumpForceMultiplier;
@@ -37,6 +40,8 @@ public class JumpBoost10s : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
 
         yield return new WaitForSeconds(buffDuration);
+
+        playerEffects.SetActive(false);
 
         attributes.jumpForce /= jumpForceMultiplier;
 

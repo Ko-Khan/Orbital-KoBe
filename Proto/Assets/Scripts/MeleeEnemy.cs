@@ -44,8 +44,6 @@ public class MeleeEnemy : MonoBehaviour
         }
         
         return hit.collider != null;
-        
-
     }
 
     private void OnDrawGizmos() 

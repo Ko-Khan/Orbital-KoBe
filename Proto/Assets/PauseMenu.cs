@@ -27,9 +27,6 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         Paused = false;
-
-        SetSliders();
-
     }
 
     // Update is called once per frame

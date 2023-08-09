@@ -16,4 +16,12 @@ public class StartMenu : MonoBehaviour {
     public void OpenControlsMenu() {
         SceneManager.LoadScene("ControlsScreen");
     }
+
+    public void LoadFirstLevel() {
+        SceneManager.LoadScene("Level00");
+    }
+
+    public void LoadCreditsScreen() {
+        SceneManager.LoadScene("CreditsScreen");
+    }
 }
